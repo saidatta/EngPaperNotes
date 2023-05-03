@@ -1,10 +1,10 @@
 ### **Abstract Summary:**
 
-The paper introduces an updated version of Viewstamped Replication, a replication method that addresses crash failures in nodes. It covers client request handling, group reorganization upon replica failure, and the process of a failed replica rejoining the group. Additionally, the paper highlights essential optimizations and presents a protocol for managing reconfigurations, which can modify both the group membership and the number of failures the group can handle.
+Introduces an updated version of Viewstamped Replication, a replication method that addresses crash failures in nodes. It covers client request handling, group reorganization upon replica failure, and the process of a failed replica rejoining the group. Additionally, the paper highlights essential optimizations and presents a protocol for managing reconfigurations, which can modify both the group membership and the number of failures the group can handle.
 
 ### **1 Introduction Summary:**
 
-The paper presents an updated version of Viewstamped Replication (VR), which is designed to work in asynchronous networks and handle crash failures in nodes. VR supports replicated services running on multiple replica nodes, providing state machine replication that allows clients to observe and modify the service state. This makes it suitable for implementing replicated services like lock managers or file systems.
+An updated version of Viewstamped Replication (VR), which is designed to work in asynchronous networks and handle crash failures in nodes. VR supports replicated services running on multiple replica nodes, providing state machine replication that allows clients to observe and modify the service state. This makes it suitable for implementing replicated services like lock managers or file systems.
 
 This updated version of VR has several improvements over previous papers:
 
@@ -193,11 +193,11 @@ Since the group can move, a new client needs a way to find the current configura
 Old clients can also use this mechanism to find the new group. However, to make it easy for current clients to find the group, old replicas that receive a client request with an old epoch number inform the client about the reconfiguration by sending it a `NEWEPOCH e, v, newconfig` message.
 
 #### 7.5 Discussion
-The authors acknowledge the delay caused by the reconfiguration process and suggest warming up new nodes before the reconfiguration. During this time, the old group can continue to process client requests. The RECONFIGURATION request is only sent when the new nodes are almost up to date, resulting in a shorter delay until the new nodes can start handling client requests.
+Paper findings acknowledge the delay caused by the reconfiguration process and suggest warming up new nodes before the reconfiguration. During this time, the old group can continue to process client requests. The RECONFIGURATION request is only sent when the new nodes are almost up to date, resulting in a shorter delay until the new nodes can start handling client requests.
 
-Additionally, the authors note that the reconfiguration protocol can be used for several purposes beyond adding and removing replicas. For example, it can be used to change the replica set's parameters or even to switch between different replicated state machines. They also mention that the reconfiguration protocol can be used in conjunction with a Byzantine fault tolerance (BFT) algorithm to provide robustness against malicious nodes.
+Additionally, It has been noted that the reconfiguration protocol can be used for several purposes beyond adding and removing replicas. For example, it can be used to change the replica set's parameters or even to switch between different replicated state machines. They also mention that the reconfiguration protocol can be used in conjunction with a Byzantine fault tolerance (BFT) algorithm to provide robustness against malicious nodes.
 
-Finally, the authors discuss some of the trade-offs of their approach, noting that while their protocol provides strong consistency guarantees and fault tolerance, it is not designed for high-performance applications. They suggest that the protocol is suitable for systems with moderate performance requirements, such as replicated file systems or replicated databases.
+Finally, Paper also discuss some of the trade-offs of their approach, noting that while their protocol provides strong consistency guarantees and fault tolerance, it is not designed for high-performance applications. They suggest that the protocol is suitable for systems with moderate performance requirements, such as replicated file systems or replicated databases.
 
 ### Section 8: Correctness of View Changes and Recovery Protocol in VR
 
