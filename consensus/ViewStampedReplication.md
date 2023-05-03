@@ -5,11 +5,11 @@
 * [Conclusion](#conclusion)
 
 
-### **Abstract:** (#abstract)
+### **Abstract:** {#abstract}
 
 Introduces an updated version of Viewstamped Replication, a replication method that addresses crash failures in nodes. It covers client request handling, group reorganization upon replica failure, and the process of a failed replica rejoining the group. Additionally, the paper highlights essential optimizations and presents a protocol for managing reconfigurations, which can modify both the group membership and the number of failures the group can handle.
 
-### **1 Introduction:** (#introduction)
+### **1 Introduction:** {#introduction}
 
 An updated version of Viewstamped Replication (VR), which is designed to work in asynchronous networks and handle crash failures in nodes. VR supports replicated services running on multiple replica nodes, providing state machine replication that allows clients to observe and modify the service state. This makes it suitable for implementing replicated services like lock managers or file systems.
 
