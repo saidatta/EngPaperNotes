@@ -1,11 +1,45 @@
+
 ## Table of Contents
 
-* [Abstract](#abstract)
-* [Introduction](#introduction)
-* [Conclusion](#conclusion)
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [Background](#background)
+  - [2.1 Assumptions](#21-assumptions)
+  - [2.2 Replica Groups](#22-replica-groups)
+  - [2.3 Architecture](#23-architecture)
+- [Overview](#overview)
+- [The VR Protocol](#the-vr-protocol)
+  - [4.1 Normal Operation](#41-normal-operation)
+  - [4.2 View Changes](#42-view-changes)
+  - [4.3 Recovery](#43-recovery)
+  - [4.4 Non-deterministic Operations](#44-non-deterministic-operations)
+  - [4.5 Client Recovery](#45-client-recovery)
+- [Pragmatics](#pragmatics)
+  - [5.1 Efficient Recovery](#51-efficient-recovery)
+  - [5.2 State Transfer](#52-state-transfer)
+  - [5.3 View Changes](#53-view-changes)
+- [Optimizations](#optimizations)
+  - [6.1 Witnesses](#61-witnesses)
+  - [6.2 Batching](#62-batching)
+  - [6.3 Fast Reads](#63-fast-reads)
+    - [6.3.1 Reads at the Primary](#631-reads-at-the-primary)
+    - [6.3.2 Reads at Backups](#632-reads-at-backups)
+- [Reconfiguration](#reconfiguration)
+  - [7.1 Reconfiguration Details](#71-reconfiguration-details)
+    - [7.1.1 Processing in the New Group](#711-processing-in-the-new-group)
+    - [7.1.2 Processing at Replicas being Replaced](#712-processing-at-replicas-being-replaced)
+  - [7.2 Other Protocol Changes](#72-other-protocol-changes)
+  - [7.3 Shutting down Old Replicas](#73-shutting-down-old-replicas)
+  - [7.4 Locating the Group](#74-locating-the-group)
+  - [7.5 Discussion](#75-discussion)
+- [Correctness](#correctness)
+  - [8.1 Correctness of View Changes](#81-correctness-of-view-changes)
+  - [8.2 Correctness of the Recovery Protocol](#82-correctness-of-the-recovery-protocol)
+  - [8.3 Correctness of Reconfiguration](#83-correctness-of-reconfiguration)
+- [Conclusion](#conclusion)
 
 
-### **Abstract:** {#abstract}
+### Abstract: {#abstract}
 
 Introduces an updated version of Viewstamped Replication, a replication method that addresses crash failures in nodes. It covers client request handling, group reorganization upon replica failure, and the process of a failed replica rejoining the group. Additionally, the paper highlights essential optimizations and presents a protocol for managing reconfigurations, which can modify both the group membership and the number of failures the group can handle.
 
