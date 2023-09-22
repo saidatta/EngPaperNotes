@@ -35,7 +35,8 @@ We use NumPy and Matplotlib to implement gradient descent, focusing on a simple 
 3.  Investigate the behavior of the gradient descent algorithm with different functions and their derivatives.
 4.  Compare the results of the gradient descent algorithm with those obtained using analytical methods for finding the minimum of a function.
 
-<pre> ```python import numpy as np import matplotlib.pyplot as plt 
+```python 
+import numpy as np import matplotlib.pyplot as plt 
 
 # Define the function and its derivative 
 def f(x): return (x - 0.5) ** 2 def df(x): return 2 * (x - 0.5) 
