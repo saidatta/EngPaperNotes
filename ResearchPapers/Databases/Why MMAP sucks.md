@@ -1,14 +1,11 @@
 https://www.youtube.com/watch?v=1BRGU_AS25c
 ## Overview
 The transcript discusses the pitfalls of using Memory-Mapped I/O (MMAP) in Database Management Systems (DBMS). The findings are based on experimental setups testing performance metrics, particularly focusing on read operations.
-
 ## Experimental Setup
 - **Baseline**: Uses the `fio` benchmarking tool with the `odirect` flag to bypass the OS page cache. This setup ensures data is read directly into user space buffers.
 - **Database Size**: 2 TB with only 100 GB allocated for the OS page cache, creating a larger than memory workload scenario.
 - **Experiments**: Focused on read-only operations, which should ideally benefit from MMAP.
-
 ## Findings
-
 ### Random Reads
 - **Experiment**: Measured reads per second in a workload with random access patterns, typical in OLTP applications.
 - **Phases Observed**:

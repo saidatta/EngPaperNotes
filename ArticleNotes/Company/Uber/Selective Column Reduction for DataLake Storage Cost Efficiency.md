@@ -1,10 +1,7 @@
 https://www.uber.com/blog/selective-column-reduction-for-datalake-storage-cost-efficiency/?uclick_id=336a56a2-cc2d-40c9-b908-10ed680e0404
 
-**Date**: September 20  
 **Focus**: Reducing data size within the Apache Parquet™ file format by selectively deleting unused large size columns.
-
 ## Background
-
 - **Problem**: Rapid growth of Uber's data led to escalating storage and compute resource costs.
 - **Challenges**:
     - Increased hardware requirements

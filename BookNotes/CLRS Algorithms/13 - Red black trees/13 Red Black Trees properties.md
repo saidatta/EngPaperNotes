@@ -11,9 +11,9 @@
   5. All paths from a node to descendant leaves contain the same number of black nodes.
 - **Use of Sentinel (T.nil)**: A single sentinel represents all NILs to simplify boundary conditions in code.
 - **Black-Height (bh)**: The number of black nodes on any simple path from a node down to a leaf.
-- **Height Bound**: Height h of a red-black tree with n internal nodes is at most 2 lg(n + 1).
+- **Height Bound**: Height h of a red-black tree with n internal nodes is at most 2 * lg(n + 1).
 #### Lemma 13.1
-- **Statement**: The height of a red-black tree with n internal nodes is at most 2 lg(n + 1).
+- **Statement**: The height of a red-black tree with n internal nodes is at most 2 * lg(n + 1).
 - **Proof**:
   - Subtrees rooted at any node x contain at least 2^bh(x) - 1 internal nodes.
   - At least half the nodes on any path from the root to a leaf must be black.

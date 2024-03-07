@@ -1,6 +1,3 @@
-
-# Java Concurrency: ReentrantLock - Fairness, TryLock and More
-
 ## Overview
 This tutorial explains how Java's `ReentrantLock` works. The `ReentrantLock` class is a part of the java.util.concurrent.locks package and it's one of the central classes in the Java Concurrency Utilities framework. It provides a basic, yet very flexible locking mechanism.
 
