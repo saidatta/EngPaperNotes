@@ -1,17 +1,15 @@
+https://www.codedump.info/post/20200625-boltdb-1/
 ### Database Structure
 - **Database to File Correspondence:** Each database (`db`) corresponds to a file. 
 - **File Page Structure:** These files are divided into pages of a usual size of 4096 Bytes. The structure of these pages can be divided into three parts:
     - **Metadata Pages:** The first two pages of each file store metadata.
     - **Special Page for Freelist:** There's a special page that stores the freelist. This freelist consists of idle page IDs.
     - **B+ Tree Pages:** The remaining pages form a B+ tree structure.
-
 ### B+ Tree Structure
 - **Buckets:** Each bucket is a complete B+ tree.
 - **Nodes and Pages:** Each node in the B+ tree corresponds to one or more consecutive pages.
-
 ### Memory Management
 - **Page Cache:** Due to memory being smaller than disk, it's practical to cache pages. A common way to implement this is using an LRU (Least Recently Used) algorithm. However, BoltDB doesn't use this approach. Instead, it uses `mmap()` to create a shared, read-only file mapping, and calls `madvise(MADV_RANDOM)`. This way, page caching is managed by the operating system.
-  
 ### Transaction Management
 - **Write-Ahead Logging:** BoltDB does not use Write-Ahead Logging (WAL). All operations within a transaction are performed in memory, and they are only written to disk when a transaction is committed.
 - **Committing Transactions:** When transactions are committed, dirty pages (i.e., pages that have been modified) are written back to disk. This ensures that concurrent read transactions are not affected by these changes.
@@ -52,8 +50,7 @@ The `ptr` is the starting address for saving data. Different types of pages stor
 4. **Leaf Page:** Stores leaf node data.
 
 ## Page Cache
-BoltDB doesn't implement page cache(bufferpool). Instead, it calls `mmap()` to map the entire file, and calls `madvise(MADV_RANDOM)` to be managed by the operating system page cache. All subsequent read operations on files on disk can be done on `db.data`, which simplifies the implementation.
-
+BoltDB doesn't implement page cache(bufferpool). Instead, it calls `mmap()` to map the entire file, and calls `madvise(MADV_RANDOM)` to be managed by the operating system page cache. All subsequent read operations on files on disk can be done on `db.data`, which simplifies the implementation
 ## Node Structure and File Format
 
 ### Leaf Node

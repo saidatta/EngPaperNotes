@@ -1,11 +1,6 @@
-## Quartz Overview
-
 ### Introduction
-
 Quartz is a robust open-source task scheduling framework presented by OpenSymphony. It assists developers in executing scheduled tasks, like extracting database information at specific times.
-
 ### Implementation
-
 1. **Job Interface**: Begin by creating an interface for the business logic named `Job`. Classes that inherit this interface can implement diverse tasks.
     ```java
     public class HelloJob implements Job {

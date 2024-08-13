@@ -1,4 +1,3 @@
-
 Here is a visual representation of the journey Slack took from using Redis to Apache Kafka:
 
 ![Slack's Journey from Redis to Kafka](https://showme.redstarplugin.com/d/ZCLOTzpx)
@@ -6,19 +5,12 @@ Here is a visual representation of the journey Slack took from using Redis to Ap
 [You can edit this diagram online if you want to make any changes.](https://showme.redstarplugin.com/s/BZ6IBRNP)
 
 Let's delve into the details:
-
 1. **Redis as a Queue (2016)**: Slack initially used Redis as a queue for jobs that were too slow for a web request, such as unfurling links, notifications, search index updates, security checks, etc. However, a database slowdown led to a job execution slowdown, which eventually caused Redis to hit its memory limit. This resulted in data loss and Redis getting stuck.
-
 2. **Redis Limitations**: The issues with Redis were mainly due to the data structure they were using for dequeuing, the difficulty in scaling workers, the bipartite topology, and the memory deadlock. They identified the need for durable storage, a better job scheduler, and decoupling of job workers from Redis.
-
 3. **Introduction of Apache Kafka (2016)**: To overcome the limitations of Redis, Slack introduced Apache Kafka. Initially, Kafka was added in front of Redis as a durable store. Over time, Kafka was used to collect data from clients and servers and push it to S3 using Pinterest's Secor library. Kafka was also used to manage distributed tracing events.
-
 4. **Scaling Kafka (2021)**: By early 2021, Slack had a 90-broker Kafka cluster, which was reaching its network limit. To address this, they split the cluster and used modern nitro-enabled d3en instances, achieving a 250% improvement.
-
 5. **Kafka as Central Nervous System (2022)**: By 2022, Kafka had become a central component in Slack's infrastructure, powering logging pipelines, trace data, billing, enterprise analytics, and security analytics. At this point, Slack was handling 6.5 Gbps, millions of messages per second, 700TB of data across 10 Kafka clusters and hundreds of nodes.
-
 This transition from Redis to Kafka allowed Slack to handle a significantly larger scale of data and operations, demonstrating the power and scalability of Kafka for large-scale data processing.
-
 ---
 **May 2023**
 - Slack uses Apache Kafka at scale:  
