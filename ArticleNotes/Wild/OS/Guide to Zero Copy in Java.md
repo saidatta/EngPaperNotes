@@ -1,4 +1,4 @@
-https://heapdump.cn/article/3290793
+ https://heapdump.cn/article/3290793
 ### Preface
 Zero Copy is a pivotal concept in system performance optimization, particularly in data transfer operations. It's a technique that reduces CPU usage and context switching, thereby enhancing the efficiency of I/O operations. This technique is integral to understanding why systems like Kafka and RocketMQ exhibit high performance.
 ### 1. Understanding Zero Copy
