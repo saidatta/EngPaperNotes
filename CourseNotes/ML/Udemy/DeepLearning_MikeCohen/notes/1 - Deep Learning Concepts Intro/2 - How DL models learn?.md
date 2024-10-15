@@ -1,12 +1,8 @@
-
 Tags: #forwardpropagation, #backwardpropagation
-
 # Introduction
 -   Deep learning models learn through a process involving forward propagation and backward propagation, also known as backpropagation or backprop.
 -   In this note, we'll use an analogy to illustrate these concepts, keeping in mind that all analogies eventually break down and do not perfectly reflect reality.
-
 # Peanut Butter and Jelly Sandwich Analogy
-
 1.  **Ingredients and Weights**
     -   Ingredients:
         -   Bread (X0): no weight
@@ -15,13 +11,14 @@ Tags: #forwardpropagation, #backwardpropagation
     -   The weights (W1 and W2) represent the amounts of peanut butter and jelly in the sandwich.
 2.  **Forward Propagation**
     -   The process of combining the weighted ingredients to create a sandwich (the output).
-    -   This is represented by the equation: Output = W1 * X1 + W2 * X2.
+    -   This is represented by the equation: Output = X0 + W1 * X1 + W2 * X2.
     -   In a deep learning model with multiple layers, forward propagation involves moving from the input data (ingredients) through the layers to the output.
-3.  **Backward Propagation (Backprop)**
+
+1.  **Backward Propagation (Backprop)**
     -   The process of adjusting the weights based on feedback (error) from the output.
     -   The error signal is used to adjust the weights, propagating back through the model from the output to the input.
     -   The specific adjustments made to the weights are determined by mathematical concepts like calculus and gradient descent, which we will explore later in the course.
-
+![[Screenshot 2024-09-30 at 3.13.41 PM.png]]
 # Company Analogy: PB&J Sandwich Business
 
 1.  **Company Structure**
@@ -36,7 +33,7 @@ Tags: #forwardpropagation, #backwardpropagation
     -   When there's a mismatch between expected and actual profit, the CEO identifies this as an error.
     -   The error message is communicated back through the company, from the CEO to the marketing department and then to the kitchen staff.
     -   Each department makes adjustments to improve their performance, without needing to know the specifics of the other departments' operations.
-
+![[Screenshot 2024-09-30 at 3.23.03 PM.png]]
 # Key Takeaways
 
 -   Forward propagation is the flow of information from the input data through the layers of a deep learning model to produce an output.

@@ -1,18 +1,14 @@
-
 In this lecture, we discuss the transpose operation, an essential linear algebra concept used in deep learning.
-
 ## Transpose Operation
-
 Transposing means converting rows into columns and columns into rows.
-
+![[Screenshot 2024-10-01 at 9.08.34 AM.png]]
 ### Column Vector Transpose
-
 A column vector transposed becomes a row vector. The transpose operation is often indicated using a capital T in the superscript.
 
 `Original column vector: [1] [2] [3]  Transposed row vector: [1, 2, 3]`
 
 ### Matrix Transpose
-
+![[Screenshot 2024-10-01 at 9.09.09 AM.png]]
 For a matrix, transposing involves preserving the column order into the rows. The first column becomes the first row, the second column becomes the second row, and so on.
 
 `Original matrix: [1, 2] [3, 4]  Transposed matrix: [1, 3] [2, 4]`

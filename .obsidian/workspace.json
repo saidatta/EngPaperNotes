@@ -11,8 +11,12 @@
             "id": "c13d2a68e99c2082",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -60,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "fcf3f9c86caeca69",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -81,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md"
+              }
             }
           }
         ]
@@ -138,6 +154,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c13d2a68e99c2082",
-  "lastOpenFiles": []
+  "active": "b3e00ac6001764de",
+  "lastOpenFiles": [
+    "CourseNotes/ML/Udemy/ReinforcementLearning/related",
+    "ProjectInternalNotes/Algorithms/A* Pathfinding for Beginners.md",
+    "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
+    "ProjectInternalNotes/Algorithms/A* Algorithm for Path Planning.md",
+    "ProjectInternalNotes/WorkMetrics/Query Percolator System.md",
+    "ProjectInternalNotes/Media/Screenshot 2024-10-03 at 6.46.28 PM 1.png",
+    "Screenshot 2024-10-03 at 6.46.28 PM.png",
+    "ProjectInternalNotes/Untitled",
+    "ProjectInternalNotes/Media",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-10-01 at 9.15.35 AM.png",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-10-01 at 9.13.49 AM.png",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-10-01 at 9.11.21 AM.png",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 2.59.12 PM.png",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.00.35 PM.png",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.05.21 PM.png",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.10.12 PM.png",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.13.41 PM.png",
+    "ArticleNotes/media",
+    "README.md",
+    "BookNotes/HPC/media",
+    "ArticleNotes/Wild/dis sys/media",
+    "CourseNotes/ML/Udemy/ReinforcementLearning/media",
+    "ArticleNotes/Wild/DB/VectorSearch/Using Elasticsearch as a Vector Database.md",
+    "ArticleNotes/Wild/DB/elasticsearch/Implementing Autocomplete with Elasticsearch with Pinyin (Chinese characters).md",
+    "ArticleNotes/Wild/DB/VectorSearch",
+    "CourseNotes/ML/Udemy/ReinforcementLearning/1.3 - Markov Decision Processes (MDP).md",
+    "CourseNotes/ML/Udemy/ReinforcementLearning/1.2 - The Bellman Equation.md",
+    "ArticleNotes/Wild/dis sys/Multi-Paxos - A More Practical Cousin of Paxos.md",
+    "CourseNotes/ML/Udemy/ReinforcementLearning",
+    "BookNotes/HPC/Chp4/4.4 Advanced Performance Models.md",
+    "BookNotes/HPC/Chp4/4.2 Three Cs of Cache Misses- Compulsory, Capacity, Conflict.md",
+    "BookNotes/HPC/Chp5/5 Parallel Algorithms and Patterns.md",
+    "BookNotes/HPC/Chp4/4 Data Design and Performance Models.md",
+    "BookNotes/HPC/Chp4/Related/Array Layout Considerations.md",
+    "BookNotes/HPC/Chp4/Related/Data-Oriented Design Principles Explained with Java and Golang Examples.md",
+    "BookNotes/HPC/Chp4/Related",
+    "BookNotes/HPC/Chp3/3.1 Performance Limits and Profiling.md",
+    "BookNotes/HPC/Chp3/3.7 In-Depth Profiling Techniques- Optimizing High-Performance Code.md",
+    "BookNotes/HPC/Chp3/3.3 Characterizing Your Application - Profiling.md",
+    "BookNotes/HPC/Chp2/2.2  Profiling and Planning for Parallelization.md",
+    "BookNotes/HPC/Chp2/2.1 Planning for Parallelization.md",
+    "BookNotes/HPC/Chp1/Related - Parallel Speedup vs Comparative.md",
+    "BookNotes/HPC/Chp1/Related- Data parallelism vs Task parallelism.md",
+    "BookNotes/HPC/Chp1/1.4 Categorizing Parallel Approaches.md",
+    "BookNotes/HPC/Chp1/Untitled",
+    "BookNotes/HPC/Chp1/1.3 How Does Parallel Computing Work?.md"
+  ]
 }

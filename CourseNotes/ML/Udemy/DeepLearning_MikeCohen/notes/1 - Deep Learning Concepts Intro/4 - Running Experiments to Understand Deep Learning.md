@@ -2,7 +2,6 @@
 - Experimental scientific approach to deep learning
 - Different types of scientists: theoretical, ecological, experimental
 - Focus on being experimental scientists with deep learning models
-
 # Types of Deep Learning Researchers/Students
 1. Theory-driven:
    - Rely heavily on theory and mathematical development
@@ -15,21 +14,18 @@
    - Systematically modify model parameters and observe results
    - Run experiments, collect data, and empirically determine best parameters
    - Main approach in this course
-
 # Parametric Experiments
 - Simple concept: repeat an experiment multiple times while systematically manipulating variables
 - Example: manipulate learning rate of a model and observe its impact
-- Independent variables: parameters being manipulated (e.g., learning rate)
-- Dependent variables: outcomes used to determine model's performance (e.g., accuracy)
-
-# Illustrations of Parametric Experiments
+- Independent variables: parameters being manipulated (e.g., learning rate, batch size, optimizer, loss fn...)
+- Dependent variables: outcomes used to determine model's performance (e.g., accuracy, speed)
+# ![[Screenshot 2024-09-30 at 3.31.15 PM.png]]Illustrations of Parametric Experiments
 1. One independent variable (e.g., starting gas):
    - Correct answer depends on a certain range of parameters
    - Extreme values of the parameter result in incorrect model learning
 2. Two independent variables (e.g., learning rate and number of training epochs):
    - Combinations of learning rate and training epochs impact model's performance
    - Both high number of training epochs and relatively large learning rate needed for success
-
 # Interpretation of Deep Learning Experiments
 - Correct interpretation:
   - Best set of parameters for a specific model, architecture, and dataset

@@ -1,7 +1,3 @@
-
-Title: Spectral Theories in Mathematics and Deep Learning
-Course: Deep Learning Understanding
-
 Overview:
 - Philosophical discussion on spectral theories in mathematics and deep learning.
 - Distinction between complicated and complex systems.
