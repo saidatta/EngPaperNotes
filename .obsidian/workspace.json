@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
+                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
+                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
+                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md"
+                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md"
               }
             }
           }
@@ -154,13 +154,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b3e00ac6001764de",
+  "active": "c13d2a68e99c2082",
   "lastOpenFiles": [
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.2 Producer-Consumer Problem Overview.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.4 Readers and Writers Problem.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.5 Monitors.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.6 Message Passing and the Producer-Consumer Problem.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.7 Advanced Message Passing and Synchronization Techniques.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.5.3 Scheduling in Batch Systems.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.5.2 Scheduling in Batch Systems.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.5.1 Categories of Scheduling Algorithms.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.5 Scheduling.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.11 Avoiding Locks- Read-Copy-Update (RCU).md",
+    "BookNotes/Modern Operating Systems 5/chp2/Untitled 18.md",
+    "BookNotes/Modern Operating Systems 5/chp2/Untitled 17.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.6 Introduction to Research on Processes and Threads.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.2.3 POSIX Threads (Pthreads).md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.2.5 Implementing Threads in the Kernel.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.3 Event-Driven Servers.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Producer-Consumer Problem Overview.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4.1 Peterson's Solution for mutual exclusion Overview.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.4 Synchronization and Interprocess Communication.md",
+    "BookNotes/Modern Operating Systems 5/chp2/Untitled 19.md",
+    "BookNotes/Modern Operating Systems 5/chp2/Untitled 20.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2. Processes and Threads.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.2 THREADS.md",
+    "BookNotes/Modern Operating Systems 5/chp2/2.1.5 Process States.md",
+    "BookNotes/Modern Operating Systems 5/chp1/1.8 The World According to C.md",
+    "BookNotes/Modern Operating Systems 5/chp2",
+    "BookNotes/Modern Operating Systems 5/chp1/related",
+    "BookNotes/Modern Operating Systems 5/chp1",
     "CourseNotes/ML/Udemy/ReinforcementLearning/related",
-    "ProjectInternalNotes/Algorithms/A* Pathfinding for Beginners.md",
-    "CourseNotes/ML/Udemy/ReinforcementLearning/related/Explore vs Exploit in Reinforcement Learning.md",
-    "ProjectInternalNotes/Algorithms/A* Algorithm for Path Planning.md",
-    "ProjectInternalNotes/WorkMetrics/Query Percolator System.md",
     "ProjectInternalNotes/Media/Screenshot 2024-10-03 at 6.46.28 PM 1.png",
     "Screenshot 2024-10-03 at 6.46.28 PM.png",
     "ProjectInternalNotes/Untitled",
@@ -174,33 +199,8 @@
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.10.12 PM.png",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.13.41 PM.png",
     "ArticleNotes/media",
-    "README.md",
     "BookNotes/HPC/media",
     "ArticleNotes/Wild/dis sys/media",
-    "CourseNotes/ML/Udemy/ReinforcementLearning/media",
-    "ArticleNotes/Wild/DB/VectorSearch/Using Elasticsearch as a Vector Database.md",
-    "ArticleNotes/Wild/DB/elasticsearch/Implementing Autocomplete with Elasticsearch with Pinyin (Chinese characters).md",
-    "ArticleNotes/Wild/DB/VectorSearch",
-    "CourseNotes/ML/Udemy/ReinforcementLearning/1.3 - Markov Decision Processes (MDP).md",
-    "CourseNotes/ML/Udemy/ReinforcementLearning/1.2 - The Bellman Equation.md",
-    "ArticleNotes/Wild/dis sys/Multi-Paxos - A More Practical Cousin of Paxos.md",
-    "CourseNotes/ML/Udemy/ReinforcementLearning",
-    "BookNotes/HPC/Chp4/4.4 Advanced Performance Models.md",
-    "BookNotes/HPC/Chp4/4.2 Three Cs of Cache Misses- Compulsory, Capacity, Conflict.md",
-    "BookNotes/HPC/Chp5/5 Parallel Algorithms and Patterns.md",
-    "BookNotes/HPC/Chp4/4 Data Design and Performance Models.md",
-    "BookNotes/HPC/Chp4/Related/Array Layout Considerations.md",
-    "BookNotes/HPC/Chp4/Related/Data-Oriented Design Principles Explained with Java and Golang Examples.md",
-    "BookNotes/HPC/Chp4/Related",
-    "BookNotes/HPC/Chp3/3.1 Performance Limits and Profiling.md",
-    "BookNotes/HPC/Chp3/3.7 In-Depth Profiling Techniques- Optimizing High-Performance Code.md",
-    "BookNotes/HPC/Chp3/3.3 Characterizing Your Application - Profiling.md",
-    "BookNotes/HPC/Chp2/2.2  Profiling and Planning for Parallelization.md",
-    "BookNotes/HPC/Chp2/2.1 Planning for Parallelization.md",
-    "BookNotes/HPC/Chp1/Related - Parallel Speedup vs Comparative.md",
-    "BookNotes/HPC/Chp1/Related- Data parallelism vs Task parallelism.md",
-    "BookNotes/HPC/Chp1/1.4 Categorizing Parallel Approaches.md",
-    "BookNotes/HPC/Chp1/Untitled",
-    "BookNotes/HPC/Chp1/1.3 How Does Parallel Computing Work?.md"
+    "CourseNotes/ML/Udemy/ReinforcementLearning/media"
   ]
 }
