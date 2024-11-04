@@ -395,7 +395,7 @@ Uber’s engineering teams have contributed unique enhancements to these technol
 
 ### References
 
-* [[1]] Amazon Kinesis: Amazon's streaming data service that makes it easy to collect, process, and analyze real-time, streaming data.
+* [[1 - Introduction to Large Language Models]] Amazon Kinesis: Amazon's streaming data service that makes it easy to collect, process, and analyze real-time, streaming data.
 * [[3 Relaxed Ordering]] Apache Beam: An open-source, unified model for defining both batch and streaming data-parallel processing pipelines.
 * [[8]] Apache HDFS: A distributed file system that provides high-throughput access to application data.
 * [[15]] Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: A blog post on the performance of these three messaging systems.

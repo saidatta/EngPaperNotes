@@ -55,12 +55,11 @@ private long[] values = new long[NUM_ROLLUPS];  // Stores actual values
 Point codecs serialize and deserialize single data points (`MultiRollupValue` instances). The encoding involves calculating deltas (difference between current and previous values) to optimize storage.
 
 #### Point3
-
 Point3 is a delta-based codec. It saves space by encoding differences between consecutive values. Point3 uses variable-length encoding to store only the minimum necessary bytes, with types like `int8`, `int16`, or `int64` depending on the value’s magnitude.
 
 #### Point3 Encoding Layout
 
-- **<rollupGamutSize> bits**: Condensed gamut mask representing enabled rollups.
+- **rollupGamutSize bits**: Condensed gamut mask representing enabled rollups.
 - **4 bits**: Type (e.g., `int8`, `int32`, or `float` versions).
 - **1 bit**: Delta flag (`0` for actual value, `1` for delta).
 - **0-64 bits**: Encoded value using the least number of bits required for the type.
@@ -121,28 +120,18 @@ A **bundle** encodes data from multiple MTS within the same blob. This reduces t
 <Variable>: Encoded MultiRollupValues in the brick
 <Padding>: To align to full bytes
 ```
-
 ---
-
 ## Codec Factories
-
 Codec factories are used to create codecs for encoding and decoding blocks, bundles, and sequences. Each factory is resolution-specific, meaning different factories are required for different time resolutions.
-
 ### Example: Using CodecFactory
-
 ```java
 CodecFactory codecFactory = codecFactoryProvider.getCodecFactory(resolutionMs);
 BlockCodec blockCodec = codecFactory.getBlockCodec(version);
 ```
-
 - **CodecFactory**: Retrieves the appropriate codec based on the time resolution and codec version.
-
 ---
-
 ## Code Examples
-
 ### Example 1: MultiRollupValue Encoding with Point3
-
 ```java
 MultiRollupValue current = ...;
 MultiRollupValue previous = ...;
@@ -165,9 +154,7 @@ for (Long mtsId : mtsData.keySet()) {
 ```
 
 - **MTS Data Storage**: Multiple MTS sequences are stored within the same bundle for efficiency.
-
 ---
-
 ## Equations and Algorithms
 
 ### Delta Encoding for Point3
@@ -205,7 +192,7 @@ The condensed gamut mask would be:
 ### Brick and Block Relationship
 
 ```
-+-----------------------+
+	+-----------------------+
 |        Block           |
 | +-------------------+ |
 | |       Brick        | |

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
+                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 449.5
   },
   "right": {
     "id": "e9f4f9af88415380",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
+                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
+                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md"
+                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md"
               }
             }
           }
@@ -154,42 +154,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c13d2a68e99c2082",
+  "active": "b3e00ac6001764de",
   "lastOpenFiles": [
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.2 Producer-Consumer Problem Overview.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Semaphore usage in Producer-Consumer Problem.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.4 Readers and Writers Problem.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.5 Monitors.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.6 Message Passing and the Producer-Consumer Problem.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.7 Advanced Message Passing and Synchronization Techniques.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.5.3 Scheduling in Batch Systems.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.5.2 Scheduling in Batch Systems.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.5.1 Categories of Scheduling Algorithms.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.5 Scheduling.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.11 Avoiding Locks- Read-Copy-Update (RCU).md",
-    "BookNotes/Modern Operating Systems 5/chp2/Untitled 18.md",
-    "BookNotes/Modern Operating Systems 5/chp2/Untitled 17.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.6 Introduction to Research on Processes and Threads.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.2.3 POSIX Threads (Pthreads).md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.2.5 Implementing Threads in the Kernel.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.3 Event-Driven Servers.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.3 Producer-Consumer Problem Overview.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4.1 Peterson's Solution for mutual exclusion Overview.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.4 Synchronization and Interprocess Communication.md",
-    "BookNotes/Modern Operating Systems 5/chp2/Untitled 19.md",
-    "BookNotes/Modern Operating Systems 5/chp2/Untitled 20.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2. Processes and Threads.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.2 THREADS.md",
-    "BookNotes/Modern Operating Systems 5/chp2/2.1.5 Process States.md",
-    "BookNotes/Modern Operating Systems 5/chp1/1.8 The World According to C.md",
-    "BookNotes/Modern Operating Systems 5/chp2",
-    "BookNotes/Modern Operating Systems 5/chp1/related",
-    "BookNotes/Modern Operating Systems 5/chp1",
-    "CourseNotes/ML/Udemy/ReinforcementLearning/related",
+    "BookNotes/Algorithms",
+    "BookNotes/App",
+    "BookNotes/Distributed Systems",
+    "BookNotes/Concurrency",
+    "BookNotes/AI/LLM",
+    "BookNotes/AI",
+    "BookNotes/AI/ML",
+    "BookNotes/Operating Systems",
+    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/4 - Hard-coded Multimodal Chain Approach.md",
+    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/3 - Multimodal Agents by Combining Single Tools.md",
+    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/1 - Multimodal Applications with LLMs.md",
+    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/2 - Getting Started with AzureCognitiveServicesToolkit.md",
+    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data/3 - Algorithm with Python REPL and Code Interpreter.md",
+    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data/2 - CodeLlama – A Comprehensive Guide.md",
+    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data/1 - Code Using LLMs.md",
+    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/4 - Streamlit frontend for DBCopilot.md",
+    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/3 - Integration for SQL Agents.md",
+    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/2 - Overview and Practical Use of the Chinook Database with LLMs.md",
+    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/1 - Using LLMs with Structured Data.md",
+    "BookNotes/AI/LLM/LLM Intro book/7 - Search and Recommendation Engines with LLMs/3 - Building a Content-Based System.md",
+    "BookNotes/AI/LLM/LLM Intro book/7 - Search and Recommendation Engines with LLMs/2 -  NNs in Recommendation Systems.md",
+    "BookNotes/AI/LLM/LLM Intro book/chp 11/1.md",
+    "BookNotes/AI/LLM/LLM Intro book/7 - Search and Recommendation Engines with LLMs/1 - Search and Recommendation Engines with LLMs.md",
+    "BookNotes/AI/LLM/LLM Intro book/6 - Conversational Applications/3 - Developing the Front-End with Streamlit.md",
+    "BookNotes/AI/LLM/LLM Intro book/6 - Conversational Applications/2 - Developing the Front-End with Streamlit.md",
+    "BookNotes/AI/LLM/LLM Intro book/6 - Conversational Applications/1 - Building Conversational Applications with LangChain.md",
+    "BookNotes/AI/LLM/LLM Intro book/5 - Embedded LLMs/3 - Embedding Memory in LLM-Powered Applications with LangChain.md",
+    "BookNotes/AI/LLM/LLM Intro book/5 - Embedded LLMs/2 -  Data Connections in LangChain.md",
+    "BookNotes/AI/LLM/LLM Intro book/5 - Embedded LLMs/1 -  Embedding LLMs within Your Applications.md",
+    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/5 - Advanced Prompt Engineering Techniques II.md",
+    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/4 - Advanced Prompt Engineering Techniques.md",
+    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/3 - Prompt Engineering - Advanced Techniques.md",
+    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/2 - Prompt Engineering II.md",
+    "BookNotes/AI/LLM/LLM Intro book/chp 11",
+    "BookNotes/LLM Intro book/Untitled 3/Untitled.canvas",
+    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code",
+    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data",
     "ProjectInternalNotes/Media/Screenshot 2024-10-03 at 6.46.28 PM 1.png",
     "Screenshot 2024-10-03 at 6.46.28 PM.png",
-    "ProjectInternalNotes/Untitled",
-    "ProjectInternalNotes/Media",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-10-01 at 9.15.35 AM.png",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-10-01 at 9.13.49 AM.png",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-10-01 at 9.11.21 AM.png",
@@ -197,10 +202,6 @@
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.00.35 PM.png",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.05.21 PM.png",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.10.12 PM.png",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.13.41 PM.png",
-    "ArticleNotes/media",
-    "BookNotes/HPC/media",
-    "ArticleNotes/Wild/dis sys/media",
-    "CourseNotes/ML/Udemy/ReinforcementLearning/media"
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-09-30 at 3.13.41 PM.png"
   ]
 }
