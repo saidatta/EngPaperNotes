@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md",
+                "file": "BookNotes/Distributed Systems/Streaming/Streaming Databases/chatgpt/Link.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md",
+                "file": "BookNotes/Distributed Systems/Streaming/Streaming Databases/chatgpt/Link.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md",
+                "file": "BookNotes/Distributed Systems/Streaming/Streaming Databases/chatgpt/Link.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BookNotes/AI/LLM/LLM Intro book/1 - Into to Large Language Models/1 - Introduction to Large Language Models.md"
+                "file": "BookNotes/Distributed Systems/Streaming/Streaming Databases/chatgpt/Link.md"
               }
             }
           }
@@ -154,45 +154,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b3e00ac6001764de",
+  "active": "c13d2a68e99c2082",
   "lastOpenFiles": [
-    "BookNotes/Algorithms",
-    "BookNotes/App",
-    "BookNotes/Distributed Systems",
-    "BookNotes/Concurrency",
-    "BookNotes/AI/LLM",
-    "BookNotes/AI",
-    "BookNotes/AI/ML",
-    "BookNotes/Operating Systems",
-    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/4 - Hard-coded Multimodal Chain Approach.md",
-    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/3 - Multimodal Agents by Combining Single Tools.md",
-    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/1 - Multimodal Applications with LLMs.md",
-    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code/2 - Getting Started with AzureCognitiveServicesToolkit.md",
-    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data/3 - Algorithm with Python REPL and Code Interpreter.md",
-    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data/2 - CodeLlama – A Comprehensive Guide.md",
-    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data/1 - Code Using LLMs.md",
-    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/4 - Streamlit frontend for DBCopilot.md",
-    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/3 - Integration for SQL Agents.md",
-    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/2 - Overview and Practical Use of the Chinook Database with LLMs.md",
-    "BookNotes/AI/LLM/LLM Intro book/8 - LLMs w. structured data/1 - Using LLMs with Structured Data.md",
-    "BookNotes/AI/LLM/LLM Intro book/7 - Search and Recommendation Engines with LLMs/3 - Building a Content-Based System.md",
-    "BookNotes/AI/LLM/LLM Intro book/7 - Search and Recommendation Engines with LLMs/2 -  NNs in Recommendation Systems.md",
-    "BookNotes/AI/LLM/LLM Intro book/chp 11/1.md",
-    "BookNotes/AI/LLM/LLM Intro book/7 - Search and Recommendation Engines with LLMs/1 - Search and Recommendation Engines with LLMs.md",
-    "BookNotes/AI/LLM/LLM Intro book/6 - Conversational Applications/3 - Developing the Front-End with Streamlit.md",
-    "BookNotes/AI/LLM/LLM Intro book/6 - Conversational Applications/2 - Developing the Front-End with Streamlit.md",
-    "BookNotes/AI/LLM/LLM Intro book/6 - Conversational Applications/1 - Building Conversational Applications with LangChain.md",
-    "BookNotes/AI/LLM/LLM Intro book/5 - Embedded LLMs/3 - Embedding Memory in LLM-Powered Applications with LangChain.md",
-    "BookNotes/AI/LLM/LLM Intro book/5 - Embedded LLMs/2 -  Data Connections in LangChain.md",
-    "BookNotes/AI/LLM/LLM Intro book/5 - Embedded LLMs/1 -  Embedding LLMs within Your Applications.md",
-    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/5 - Advanced Prompt Engineering Techniques II.md",
-    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/4 - Advanced Prompt Engineering Techniques.md",
-    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/3 - Prompt Engineering - Advanced Techniques.md",
-    "BookNotes/AI/LLM/LLM Intro book/4 - Prompt Engineering/2 - Prompt Engineering II.md",
-    "BookNotes/AI/LLM/LLM Intro book/chp 11",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data/Conclusion.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/chatgpt/Link.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data/5 - Lakehouse and the Convergence with Streaming Technologies.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data/4 - Data Warehouses and Streaming Integration.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data/3 - Data Wrapping and PostgreSQL Multicorn.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data/2 - Incremental View Maintenance (IVM).md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data/1 - Future State of Real-Time Data.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/10 - Deployment Models/2 - ksqlDB and Related Streaming Technologies.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/10 - Deployment Models/1 - Deployment Models.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/chatgpt",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/10 - Deployment Models",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/9 - The Streaming Plane/3 - Streaming Data Mesh with Streaming Plane and Streaming Databases.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/9 - The Streaming Plane/1 - Intro.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/9 - The Streaming Plane/2 - Operational Analytics.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/8 - Zero-ETL or Near-Zero-ETL/3 - Lambda Architecture.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/8 - Zero-ETL or Near-Zero-ETL/2 - Proton and Near-Zero-ETL.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/8 - Zero-ETL or Near-Zero-ETL/1 - Zero-ETL or Near-Zero-ETL.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/7 - Emergence of Other Hybrid Data Systems/Next-Generation Hybrid Databases *.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/7 - Emergence of Other Hybrid Data Systems/Motivations for Hybrid Systems.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/7 - Emergence of Other Hybrid Data Systems/Intro.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/6 - Consistency/3 - How Do Internally Consistent Stream Processing Systems Pass the Toy Example?.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/6 - Consistency/3 - Pathway - Achieving Consistency in Stream Processing.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/6 - Consistency/2 - Comparing Consistency Across Stream Processing Systems.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/6 - Consistency/1 - Intro.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/5 - Introduction to Streaming Databases/3 - ELT with Streaming Databases.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/5 - Introduction to Streaming Databases/2 - Streaming Debuggability.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/5 - Introduction to Streaming Databases/1 - Intro.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/4 - Materialized Views/1 - Materialized Views.md",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/9 - The Streaming Plane",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/8 - Zero-ETL or Near-Zero-ETL",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/7 - Emergence of Other Hybrid Data Systems",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/6 - Consistency",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/5 - Introduction to Streaming Databases",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/4 - Materialized Views",
+    "BookNotes/Distributed Systems/Streaming/Streaming Databases/3 - Serving Real-Time Data",
     "BookNotes/LLM Intro book/Untitled 3/Untitled.canvas",
-    "BookNotes/AI/LLM/LLM Intro book/10 - Working with Code",
-    "BookNotes/AI/LLM/LLM Intro book/9 - LLMs with Structured Data",
     "ProjectInternalNotes/Media/Screenshot 2024-10-03 at 6.46.28 PM 1.png",
     "Screenshot 2024-10-03 at 6.46.28 PM.png",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/media/Screenshot 2024-10-01 at 9.15.35 AM.png",
