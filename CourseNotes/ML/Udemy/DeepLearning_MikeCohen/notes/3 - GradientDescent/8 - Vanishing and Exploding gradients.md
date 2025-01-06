@@ -8,20 +8,16 @@
 - If the function has a flat region where the function is almost constant, the derivative will be close to zero.
 - If gradient descent starts in this flat region, the steps taken will be small and eventually may not progress any further, even though the actual minimum hasn't been reached.
 - This phenomenon is called the **vanishing gradient problem**.
-
 ### Implications
 - Vanishing gradients mean that the weights don't change, leading to no learning.
 - This is particularly problematic for deep networks with high-dimensional landscapes.
-
 ## Exploding Gradients
 - On the other hand, if the function has a steep region, the derivative will have a large magnitude.
 - If gradient descent is in this steep region, the steps taken may be too large and might overshoot the actual minimum.
 - This phenomenon is called the **exploding gradient problem**.
-
 ### Implications
 - Exploding gradients cause weights to change wildly, resulting in poor solutions.
 - The learning process never stops, as the model continues to bounce around without settling on a solution.
-
 ## Summary
 - **Vanishing gradient** occurs when the weights don't change, causing no learning.
 - **Exploding gradient** happens when weights change wildly, leading to poor solutions and never-ending learning.

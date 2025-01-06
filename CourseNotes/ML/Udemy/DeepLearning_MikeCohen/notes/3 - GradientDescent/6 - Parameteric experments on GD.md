@@ -2,14 +2,12 @@
 - Gradient descent is an optimization algorithm used in machine learning and deep learning
 - Objective: Minimize the objective function (loss function) to find the best model parameters
 - Course: Deep Understanding of Deep Learning by Mike Cohen
-
 ### Gradient Descent
 - Iterative optimization process
 - Equation: 𝑤_𝑡+1 = 𝑤_𝑡 − 𝛼 × ∇𝐹(𝑤_𝑡)
   - 𝑤_𝑡: current model parameters
   - 𝛼: learning rate
   - ∇𝐹(𝑤_𝑡): gradient of the objective function
-
 ### Goals of Parametric Experiments
 1. Explore gradient descent and understand meta parameters like starting value, learning rate, and the number of training iterations
 2. Learn to set up, run, and interpret parametric experiments on gradient descent

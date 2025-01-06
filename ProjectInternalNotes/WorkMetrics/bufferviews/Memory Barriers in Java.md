@@ -1,5 +1,4 @@
 Memory barriers are crucial in modern Java applications to ensure proper memory visibility and consistency, especially in concurrent systems. Java’s memory model leverages these barriers to prevent reordering of reads and writes, which can cause unpredictable behavior.
-
 #### **1. Detailed Breakdown of Java’s Memory Barriers**
 - **LoadLoad Barrier**: Ensures that all load (read) operations that appear before the barrier are completed before any load operations that follow the barrier.
   - Example: Ensures that all reads before the barrier are committed before moving to subsequent reads.

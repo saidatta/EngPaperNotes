@@ -1,9 +1,6 @@
-
-
 In this section, we delve into the evolution of generative AI model architectures, from early developments to the state-of-the-art transformer models that power today's Large Language Models (LLMs). We will explore the limitations of early models like Recurrent Neural Networks (RNNs) and Long Short-Term Memory networks (LSTMs), and how transformers overcame these challenges to become the backbone of modern LLMs.
 
 ---
-
 ## Table of Contents
 
 1. [Early Experiments in Generative AI](#early-experiments-in-generative-ai)

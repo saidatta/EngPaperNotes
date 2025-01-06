@@ -3,24 +3,19 @@ Tags: #gradientdescent #localminima #deeplearning
 -   Gradient descent might not always give the correct or good solution
 -   Local minima can be problematic for gradient descent
 -   Local minima in deep learning context is still a mystery
-
 ## Local Minima
-
 -   Points in the error landscape where the error is minimized locally but not globally
 -   Gradient descent can get stuck in local minima
 -   High-dimensional error landscapes make it harder to visualize local minima
-
+![[Screenshot 2024-12-27 at 9.22.06 PM.png]]
 ### Two Possible Solutions for Local Minima
-1.  Many good solutions: Multiple equally good local minima
+1.  Many good solutions: Multiple equally good local minima![[Screenshot 2024-12-27 at 9.24.56 PM.png]]
 2.  Extremely few local minima: High-dimensional space has very few local minima
-
 ## Dealing with Local Minima
 -   If the model performs well, don't worry about it
 -   Retrain the model many times with different random starting weights
 -   Increase the dimensionality of the error landscape (more complex model)
-
 ## Example: Solutions Implemented in Python
-
 -   In the next section, the lecturer will provide examples of how to implement the solutions for local minima in Python
 -   Retraining with different starting weights and making the model more complex will be demonstrated
 
@@ -47,7 +42,7 @@ After a few more iterations, gradient descent converges to x ≈ 0.47. At this p
 The global minimum of the function f(x) is actually at x ≈ -1.18, where f(x) ≈ -2.47. Since gradient descent started at x = 2.5, it got stuck in the local minimum at x ≈ 0.47 instead of finding the global minimum.
 
 This example demonstrates how gradient descent can get stuck in a local minimum rather than finding the global minimum. Different initial points or a different learning rate might help the algorithm find the global minimum in this case.
-
+![[Screenshot 2024-12-27 at 9.24.39 PM.png]]
 ## Saddle Point
 
 A saddle point is a point in the error landscape of a function where the function has a minimum in one direction and a maximum in another direction. In other words, it is a point where the gradient is zero, but it is not a local minimum or local maximum. Saddle points are more common in high-dimensional spaces and can cause gradient descent to slow down or get temporarily stuck.
