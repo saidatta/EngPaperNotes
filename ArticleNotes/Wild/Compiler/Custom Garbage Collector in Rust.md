@@ -321,5 +321,3 @@ Creating detailed Obsidian notes for the article on the "dumpster" garbage colle
     [dependencies]
     dumpster = { version = "0.1.2", features = ["coerce-unsized"]}
     ```
-
----

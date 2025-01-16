@@ -1,19 +1,12 @@
 https://halfrost.com/segment_tree/
-
-# Obsidian Note: Segment Tree
-
-## What is a Segment Tree?
-
 A segment tree is a binary tree data structure, used for storing intervals or line segments. It was invented by Jon Louis Bentley in 1977. A segment tree allows for quick querying of all intervals containing a certain point.
 
 Here is a brief look at the segment tree characteristics:
-
 - The space complexity of a segment tree that stores 'n' intervals is O(n).
 - The time complexity of querying is O(log n + k), where 'k' is the number of intervals that meet the condition.
 - Segment tree data structure can be generalized to higher dimensions.
 
 ## 1. What is a segment tree
-
 Take a one-dimensional segment tree as an example.
 
 ![](https://img.halfrost.com/Blog/ArticleImage/153_1.png)

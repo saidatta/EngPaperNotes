@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ResearchPapers/Databases/Photon (Databricks).md",
+                "file": "ArticleNotes/Wild/dis sys/phileaton/Deterministic Simulation Testing (DST).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Photon (Databricks)"
+              "title": "Deterministic Simulation Testing (DST)"
+            }
+          },
+          {
+            "id": "d71b17501b2d7185",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CourseNotes/HusseinOS/Storage/1 - HDDs, SSDs, NAND, and the Magic of LBA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1 - HDDs, SSDs, NAND, and the Magic of LBA"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -187,54 +201,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0a6c7e4af4e4947",
+  "active": "d71b17501b2d7185",
   "lastOpenFiles": [
-    "ResearchPapers/Databases/Untitled.md",
+    "CourseNotes/HusseinOS/Storage",
+    "ProjectInternalNotes/Databases/influxdb/2.md",
+    "CourseNotes/HusseinOS/Storage/1 - HDDs, SSDs, NAND, and the Magic of LBA.md",
+    "ProjectInternalNotes/Databases/influxdb/1.2 - HTTP.rs.md",
+    "ProjectInternalNotes/Databases/influxdb/1.1 - HTTP.rs.md",
+    "ProjectInternalNotes/Databases/influxdb/Untitled 4.md",
+    "ProjectInternalNotes/Databases/influxdb/8.1 - QueryExecutor.md",
+    "ProjectInternalNotes/Databases/influxdb/8.2 - QueryExecutor.md",
+    "ProjectInternalNotes/Databases/influxdb/7 - queryplanner.md",
+    "ProjectInternalNotes/Databases/influxdb/6.1 - wal lib.md",
+    "ProjectInternalNotes/Databases/influxdb/6.2 - wal lib.md",
+    "ProjectInternalNotes/Databases/influxdb/5 - WalObjectStore.md",
+    "ProjectInternalNotes/Databases/influxdb/4 - SnapshotTracker.md",
+    "ProjectInternalNotes/Databases/influxdb/3 - Command-main.rs.md",
+    "ArticleNotes/Company/Netflix/Databases/2 - Incremental Processing Using Netflix Maestro and Apache Iceberg.md",
+    "ProjectInternalNotes/Databases/influxdb",
+    "ArticleNotes/Company/Netflix/Databases/3 - Data Ingestion Pipeline with Operation Management.md",
+    "Screenshot 2025-01-08 at 1.49.55 PM.png",
+    "Screenshot 2025-01-08 at 1.49.45 PM.png",
+    "Screenshot 2025-01-08 at 1.49.35 PM.png",
+    "Screenshot 2025-01-08 at 1.49.26 PM.png",
+    "Screenshot 2025-01-08 at 1.49.12 PM.png",
+    "Screenshot 2025-01-08 at 1.48.54 PM.png",
+    "ArticleNotes/Company/Netflix/Databases/1 - Netflix TimeSeries Data Abstraction Layer in Distributed Systems.md",
+    "What's the Big Deal About Deterministic Simulation Testing?.md",
+    "ArticleNotes/Wild/dis sys/phileaton/Deterministic Simulation Testing (DST).md",
+    "ArticleNotes/Wild/Compiler/Custom Garbage Collector in Rust.md",
+    "ArticleNotes/Wild/dis sys/phileaton",
+    "ArticleNotes/Wild/Algorithms/Segment Tree.md",
+    "ArticleNotes/Wild/Algorithms/Binary Search tidbits.md",
+    "ArticleNotes/Wild/PL/1.1 - A Simple Mark-Sweep Garbage Collector.md",
+    "ArticleNotes/Wild/PL/1.2 - Advanced Mark-Sweep Garbage Collector.md",
     "ResearchPapers/Databases/Photon (Databricks).md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/3 - GradientDescent/6 - Parameteric experments on GD.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/3 - GradientDescent/4 - GD in 2D.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/3 - GradientDescent/8 - Vanishing and Exploding gradients.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/1 - Perceptron and ANN architecture.md",
+    "ArticleNotes/Wild/PL",
+    "ResearchPapers/Databases/Untitled.md",
     "Screenshot 2024-12-27 at 10.39.41 PM.png",
     "Screenshot 2024-12-27 at 10.38.07 PM.png",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/3 - GradientDescent/3 - GD in 1D.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/3 - GradientDescent/2 - Local minima.md",
     "Screenshot 2024-12-27 at 9.24.56 PM.png",
     "Screenshot 2024-12-27 at 9.24.39 PM.png",
-    "Screenshot 2024-12-27 at 9.22.06 PM.png",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/3 - GradientDescent/1 - Overview.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/1 - Deep Learning Concepts Intro/2 - How DL models learn?.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/1 - Deep Learning Concepts Intro/1 - What is ANN?.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/2- BaseBrokerRequestHandler.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/1- PinotClientRequest.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/5- ServerQueryExecutorV1Impl.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/3- MultiStageBrokerRequestHandler.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/4- BaseSingleStageBrokerRequestHandler.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/6- BaseTableDataManager.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/Untitled 6.md",
-    "ProjectInternalNotes/Distributed Systems/Apache pinot/Untitled 5.md",
-    "BookNotes/Operating Systems/Windows/28 - Simple Function Hooking.md",
     "ProjectInternalNotes/Distributed Systems/Apache pinot",
-    "BookNotes/Operating Systems/Windows/27 - Shell Code-based DLL Injection (x64) Part II.md",
-    "BookNotes/Operating Systems/Windows/26 - Injecting a DLL Using Shell Code on x64.md",
-    "BookNotes/Operating Systems/Windows/24 - x64 Virtual Address Translation.md",
-    "Screenshot 2024-12-13 at 3.01.21 PM.png",
-    "BookNotes/Operating Systems/Windows/25 - x64 Virtual Address Translation (Code).md",
-    "Screenshot 2024-12-13 at 2.45.43 PM.png",
-    "Screenshot 2024-12-13 at 2.44.06 PM.png",
-    "Screenshot 2024-12-13 at 2.42.09 PM.png",
-    "ProjectInternalNotes/WorkMetrics/bufferviews/Memory Barriers in Java.md",
-    "Screenshot 2024-12-13 at 2.19.08 PM.png",
-    "BookNotes/Operating Systems/Windows/Untitled 1.md",
     "BookNotes/Operating Systems/Windows/other",
     "BookNotes/Operating Systems/Windows",
     "ProjectInternalNotes/WorkMetrics/Untitled",
     "ProjectInternalNotes/WorkMetrics/Offsite",
     "CourseNotes/HusseinOS/ProcessvsThreads/continued",
     "CourseNotes/HusseinOS/ProcessvsThreads",
-    "CourseNotes/HusseinOS",
-    "BookNotes/Distributed Systems/Streaming/Streaming Databases/chatgpt",
-    "BookNotes/Distributed Systems/Streaming/Streaming Databases/11 - Future State of Real-Time Data",
     "BookNotes/LLM Intro book/Untitled 3/Untitled.canvas"
   ]
 }
