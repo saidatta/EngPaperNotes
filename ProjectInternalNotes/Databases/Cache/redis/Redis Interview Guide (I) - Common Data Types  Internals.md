@@ -51,11 +51,8 @@ struct SDS {
 #### **Application Scenarios**
 - **Counters**: Redis’s single-threaded execution ensures atomic updates, making it ideal for counting operations (e.g., page views).
 - **Session Sharing**: Distributed systems can store user session data centrally in Redis.
-  
 ---
-
 ## **2️⃣ List**
-
 ### **Underlying Data Structures**
 1. **Compressed List**: Used when elements are small and few (<512 elements, <64 bytes each).
 	1. ![[Screenshot 2024-09-23 at 11.37.33 AM.png]]

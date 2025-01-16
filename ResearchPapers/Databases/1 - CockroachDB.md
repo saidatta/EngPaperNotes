@@ -1,5 +1,4 @@
 ## Abstract:
-
 -   CockroachDB is a scalable SQL DBMS designed for global OLTP workloads with high availability and strong consistency.
 -   Provides fault tolerance and resilience through replication and automatic recovery mechanisms.
 -   Presents a novel transaction model for consistent geo-distributed transactions on commodity hardware.

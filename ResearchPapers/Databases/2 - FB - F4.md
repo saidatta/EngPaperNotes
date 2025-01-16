@@ -1,4 +1,3 @@
-
 ### Overview
 F4, Facebook's Warm Binary Large OBjects (BLOB) Storage System. A BLOB refers to data items in a binary format like images, videos, and documents uploaded by users.
 ![[Screenshot 2023-05-30 at 4.02.13 PM.png]]

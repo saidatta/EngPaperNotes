@@ -90,7 +90,6 @@ while (1) {
 - **Overhead:** Each call requires copying the entire descriptor set from user space to kernel space.
 ---
 ### 7. **poll() Function Interface**
-
 ```c
 #include <poll.h>
 
@@ -102,14 +101,10 @@ struct pollfd {
 
 int poll(struct pollfd *fds, nfds_t nfds, int timeout);
 ```
-
 - Removes the FD limit, allowing monitoring of any number of descriptors.
 - Uses a pollfd array instead of bitmaps.
-
 ---
-
 ### 8. **poll() Usage Example**
-
 ```c
 #define MAX_EVENTS 1024
 struct pollfd fds[MAX_EVENTS];
@@ -131,17 +126,12 @@ while (1) {
     }
 }
 ```
-
 ---
-
 ### 9. **Disadvantages of `poll()`**
 - **Linear Scanning:** All descriptors still need to be polled.
 - **FD Set Copy:** Each call to `poll()` requires copying the FD set between user and kernel space.
-
 ---
-
 ### 10. **epoll() Function Interface**
-
 ```c
 #include <sys/epoll.h>
 
@@ -149,12 +139,9 @@ int epoll_create(int size); // Create an epoll instance
 int epoll_ctl(int epfd, int op, int fd, struct epoll_event *event); // Add, modify, or remove a file descriptor
 int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout); // Wait for events
 ```
-
 - Uses an efficient red-black tree to track file descriptors.
 - Returns only the file descriptors with ready events, avoiding linear scanning.
-
 ---
-
 ### 11. **epoll() Usage Example**
 
 ```c

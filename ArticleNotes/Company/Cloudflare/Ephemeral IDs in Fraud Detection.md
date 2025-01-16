@@ -2,7 +2,6 @@ https://blog.cloudflare.com/turnstile-ephemeral-ids-for-fraud-detection/
 
 ---
 ## Overview
-
 **Ephemeral IDs** are a significant advancement in **fraud detection** technology, introduced by **Cloudflare** as part of their **Turnstile CAPTCHA alternative**. Ephemeral IDs are **short-lived identifiers** that link client behavior to a specific device, rather than relying on IP addresses, which have become less reliable in the modern Internet landscape. This new feature targets advanced **bot detection** and **fraud prevention** by focusing on **client-side behavior** rather than network-level identifiers like IPs.
 
 ### Key Use Cases

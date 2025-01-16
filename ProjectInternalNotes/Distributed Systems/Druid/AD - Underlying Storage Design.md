@@ -1,6 +1,5 @@
 https://juejin.cn/post/6844904110626439175
 #### I. Introduction to Druid's Storage Method
-
 - **Integration of Features**: Druid combines elements of data warehouses, full-text retrieval systems, and time series databases.
 - **Core Component**: The underlying data storage method is key to Druid's multifaceted capabilities.
 #### II. Druid's Data Model
