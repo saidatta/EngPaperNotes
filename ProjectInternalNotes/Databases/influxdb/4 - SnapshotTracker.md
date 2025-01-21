@@ -18,11 +18,8 @@ Below is a **PhD-level** exploration of the **`SnapshotTracker`** module in Infl
 8. [Summary & Further Notes](#summary--further-notes)
 
 ---
-
 ## 1. High-Level Overview
-
 In **InfluxDB 3.0**, the **Write-Ahead Log** may generate multiple WAL files over time, each storing a *range of data* (timestamps, etc.). To **compact** or **persist** these older WAL files as Parquet (or other forms), the system triggers **snapshots**. The **`SnapshotTracker`**:
-
 - Maintains a **list** of WAL “periods,” each representing a single WAL file.  
 - Decides **when** to generate a **snapshot**.  
 - Determines **which** WAL files can be considered “ready for snapshot,” based on time constraints and maximum size thresholds.  
@@ -243,7 +240,6 @@ This ensures a little buffer (1.5x snapshot_size) so we don’t snapshot too fre
 ## 8. Summary & Further Notes
 
 **`SnapshotTracker`** elegantly handles older WAL files and ensures they are:
-
 - **Properly chunked** by time (`gen1_duration`).  
 - **Collected** into snapshots once enough data accumulates or we detect an outlier scenario.  
 - **Safely** removed once the snapshot completes, preventing indefinite WAL growth.

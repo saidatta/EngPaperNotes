@@ -166,11 +166,8 @@ async fn shutdown(&self) {
 This ensures no more new writes are accepted, any unflushed data is persisted, and pending snapshots complete. This “clean” shutdown means minimal data loss risk.
 
 ---
-
 ## 4. Object Store Serialization & Retrying
-
 During flush:
-
 ```rust
 loop {
     match self
@@ -192,11 +189,9 @@ loop {
     }
 }
 ```
-
 If object store writes fail (e.g., network issues), the WAL tries again up to 100 times. Beyond that, it signals failures to all waiting `oneshot` channels, returning an error message. This handles **transient** errors gracefully.
 
 ---
-
 ## 5. Example Code Flow
 
 ```mermaid

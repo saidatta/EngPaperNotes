@@ -62,7 +62,6 @@ At the top:
 These help keep the codebase robust, consistent, and well-documented.
 
 ---
-
 ## 3. Module Structure & Responsibilities
 
 The file’s organization is indicated by `pub mod ...` lines. Each of these submodules specializes in a piece of the InfluxDB 3.0 server’s functionality:
@@ -165,7 +164,6 @@ pub trait QueryExecutor: QueryDatabase + Debug + Send + Sync + 'static {
 - The associated type **`Error`** is a generic for possible query errors.
 
 ---
-
 ## 5. Serving Requests
 
 The **`serve`** function orchestrates the binding of both HTTP and gRPC services on the same port:

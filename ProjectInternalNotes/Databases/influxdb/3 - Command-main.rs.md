@@ -15,7 +15,6 @@
 ## 1. High-Level Overview
 
 This code represents the **entry point** of the InfluxDB 3 / InfluxDB IOx binary. It:
-
 - Sets up environment variables from `.env`.  
 - Installs crash handlers to print stack traces on crashes.  
 - Parses command-line arguments (subcommands) like `serve`, `query`, `write`, etc.  
@@ -25,7 +24,6 @@ This code represents the **entry point** of the InfluxDB 3 / InfluxDB IOx binary
 When a user runs the `influxdb3` executable, Rust’s [`main()`](#putting-it-all-together-in-main) function drives the entire program logic as laid out in this file.
 
 ---
-
 ## 2. Crate & Compiler Options
 
 At the top:
@@ -53,11 +51,8 @@ At the top:
 - **Other Clippy lints**: These encourage best practices, e.g., `use_self`, `explicit_iter_loop` to keep code more idiomatic, etc.
 
 ---
-
 ## 3. Command-Line Parsing with Clap
-
 In the code, you see:
-
 ```rust
 #[derive(Debug, clap::Parser)]
 #[clap(
@@ -115,7 +110,6 @@ enum Command {
 ```
 
 ### Explanation
-
 - **`clap::Parser`** (formerly `structopt`-style derive) automatically implements command-line parsing. The `Config` struct holds top-level flags/options, whereas `Command` holds subcommands.  
 - The `#[clap(subcommand)]` attribute on `command` field means it can parse subcommands like `serve`, `query`, etc., each of which has its own specialized `Config`.  
 - The doc comments (e.g., `/// Run the InfluxDB 3.0 server`) become help text.  
@@ -123,11 +117,9 @@ enum Command {
 This design allows each subcommand to have unique parameters while still being part of a single CLI.
 
 ---
-
 ## 4. Asynchronous Execution with Tokio
 
 To execute asynchronous commands (e.g., networking, I/O, concurrency), the code spins up a **Tokio runtime** in `get_runtime(...)`:
-
 ```rust
 fn get_runtime(num_threads: Option<usize>) -> Result<Runtime, std::io::Error> {
     use tokio::runtime::Builder;

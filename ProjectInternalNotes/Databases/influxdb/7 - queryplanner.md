@@ -1,7 +1,6 @@
 Below is a **PhD-level** exploration of the **Planner** code for InfluxDB 3.0, focusing on how it **creates physical query plans** for both **SQL** and **InfluxQL** queries in a **DataFusion** environment. We’ll look at how it ties into the overall **IOxSessionContext**, how query parameters are substituted, and why separate threadpools are used. We’ll also include **examples** and a **visualization** of the planning process.
 
 ---
-
 # Table of Contents
 1. [High-Level Overview](#high-level-overview)  
 2. [Key Components & Data Structures](#key-components--data-structures)  
@@ -16,13 +15,10 @@ Below is a **PhD-level** exploration of the **Planner** code for InfluxDB 3.0, f
 7. [Conclusion & Notes](#conclusion--notes)
 
 ---
-
 ## 1. High-Level Overview
-
 This module implements a **`Planner`** that generates **physical query plans** for **SQL** or **InfluxQL** within the InfluxDB 3.0 ecosystem. It interfaces with **DataFusion** and the **IOx** query layers to transform textual queries into an **`ExecutionPlan`**. Notably, it is designed to **offload** CPU-intensive query planning to a **separate threadpool**, ensuring the main server loop remains responsive.
 
 ---
-
 ## 2. Key Components & Data Structures
 
 ### 2.1 Planner Struct
@@ -55,9 +51,7 @@ Clones the original session context, adding a **sub-span** label that helps trac
 1. **Tracing**: The child context approach allows hierarchical span recording (e.g., which sub-system created the plan).  
 2. **Configuration**: Contains knobs for memory limits, concurrency, or user-defined function (UDF) registrations.  
 3. **Catalog & Schema**: Possibly references a custom `CatalogProvider` or metadata (like system tables) to find tables.
-
 ### 2.3 SqlQueryPlanner & InfluxQLQueryPlanner
-
 - **`SqlQueryPlanner`**: Part of the `iox_query::frontend::sql` module. It parses standard SQL syntax, resolving references to tables, columns, and applying DataFusion optimizations.  
 - **`InfluxQLQueryPlanner`**: Part of the `iox_query_influxql::frontend::planner`, bridging InfluxQL statements (e.g., `SELECT * FROM "measurement" WHERE time > ...`) into a DataFusion plan.  
 
