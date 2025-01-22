@@ -7,22 +7,16 @@ Rust provides a variety of **traits** for comparing and ordering values, notably
 - **`Ordering`** (an enum) to represent the three outcomes of a comparison: **Less**, **Equal**, or **Greater**.
 - Helpers like **`Reverse`** for reversing order, and **`min`/`max`** for taking minima or maxima.
 ---
-
 ## 1. **Background Concepts**
 ### 1.1 Partial vs. Total Equivalence
-
 - **`PartialEq`**: Indicates that we can compare two values for equality (==, !=).
   - This is potentially **partial** because for some types (e.g., floating-point with `NaN`), not all values can form a well-defined equivalence relation for **all** pairs.
 - **`Eq`**: Strengthens `PartialEq` to require a full **equivalence relation**, where every value is equal to itself (`a == a` always). Common for integral or discrete types.
-
 ### 1.2 Partial vs. Total Ordering
-
 - **`PartialOrd`**: We can compare values, but some comparisons may fail to produce an ordering (e.g. `NaN` in floating point). 
   - This means `a < b`, `a > b`, etc., are well-defined only in some cases.
 - **`Ord`**: A **total** ordering. For any two values `a` and `b`, exactly one of `(a < b)`, `(a == b)`, or `(a > b)` holds.
-
 ### 1.3 `Ordering` Enum
-
 ```rust
 #[derive(Clone, Copy, PartialEq, Eq, Debug, Hash)]
 pub enum Ordering {
@@ -34,7 +28,6 @@ pub enum Ordering {
 Used by many comparison functions, signifying the outcome.
 
 ---
-
 ## 2. **`PartialEq` and `Eq`**
 
 ### 2.1 `PartialEq`
@@ -74,7 +67,6 @@ impl PartialEq for Book {
 ```
 
 ### 2.2 `Eq`
-
 **Signature**:
 ```rust
 trait Eq: PartialEq<Self> { /* no extra methods */ }

@@ -1,0 +1,243 @@
+Below is a set of **Obsidian**-formatted notes that comprehensively capture and elaborate on the material from the lecture. The notes are organized with headings, subheadings, code blocks, examples, and visualizations (including Mermaid diagrams) to illustrate key concepts. Feel free to copy and paste into your Obsidian vault or markdown editor.
+
+
+## Overview
+We’ve learned over the years (decades, really) that **storage hardware** needs to evolve with all its components. There is inherent complexity in how storage is managed at both the hardware level (disk, SSD, etc.) and at the software (OS) level. However, the overarching **abstraction** that emerges for the OS is:
+
+> **“Present a massive array of logical blocks (LBAs) from 0 up to billions of blocks.”**
+
+From the OS’s perspective, it issues reads and writes to these logical block addresses, and the storage device (SSD, HDD, etc.) takes care of mapping those LBAs to physical addresses internally.
+
+This abstraction allows for:
+- Building **file systems** on top of block storage.
+- Potential to avoid file systems entirely (e.g., in specialized databases).
+- Uniform handling of storage across widely differing devices.
+
+---
+
+## Block Storage and LBAs
+
+### What Is Block Storage?
+- A **block storage device** is seen by the OS as a large array of equally sized blocks, indexed from `0` to `N-1`.
+- Each block is sometimes referred to as an **LBA** (Logical Block Address).
+- For example, if the OS says “write 5 LBAs,” the device just needs to ensure those 5 LBAs are written somewhere on disk or SSD. The internal arrangement (platter, track, head, page, sector) is hidden from the OS.
+
+### Why Is This Important?
+- This uniformity lets us layer **file systems** or other software solutions on top without worrying about the underlying physical structure.
+- It simplifies the OS’s job: the OS only has to manage which blocks are used, not *where* they physically go.
+- It also opens up advanced possibilities like **caching** (page cache) to avoid expensive trips to physical storage whenever possible.
+
+---
+
+## File Systems
+
+### Introduction
+On top of this “array of blocks,” we typically build a **file system**. Humans prefer dealing with *files* and *directories* (folders). File systems manage the mapping from:
+1. **File abstractions** (name, path, directory)  
+2. **Offsets within files** (e.g., reading byte 200 to byte 1200)  
+3. **Logical blocks** (LBAs) that store those bytes.
+
+**Key point**: We can bypass the file system entirely (for instance, some databases do raw block I/O), but for most general-purpose OS usage, file systems are extremely useful.
+
+### Everything Is a File?
+In Linux and Unix-like systems, a canonical philosophy is “everything is a file”:
+- Your keyboard? Mapped as a special file in `/dev/`.
+- Your monitor/display? Managed via special files.
+- A network interface can also appear as a file descriptor.
+- And of course, actual disk files (text, binaries, etc.) are also files.
+
+### File Systems as Mini Databases
+One way to conceptualize a file system is that it’s a *small database*:
+- It has **metadata** tables (which store filenames, sizes, permissions, directory structure).
+- It must handle concurrency, corruption, journaling, etc.
+- There are many different designs for these “mini databases”: 
+  - **FAT** (File Allocation Table, e.g., FAT12, FAT16, FAT32)
+  - **NTFS** (New Technology File System on Windows)
+  - **APFS** (Apple File System)
+  - **ext** family (ext2, ext3, ext4)
+  - **ZFS**, **XFS**, **btrfs** (each has unique features related to snapshots, checksums, data integrity, etc.)
+
+A (lighthearted) joke in the OS community goes:
+> “File systems are like front-end frameworks: there are just too many of them.”  
+
+Despite this, each file system addresses certain needs or design trade-offs.
+
+---
+
+## Caching and the Page Cache
+When you read or write files, the OS employs a **page cache**:
+- Reading a block from disk once may cache it in RAM for later use.
+- Subsequent reads of that same block can be served from **memory** (much faster).
+- This caching can significantly enhance performance, especially for frequently accessed files or metadata (directory listings, etc.).
+
+---
+
+## Clarifying Overloaded Terms: Block & Page
+
+> **Warning**: *“Block” and “page” are heavily overloaded terms in computing.*
+
+### Different “Block” Concepts
+1. **Physical Block (PBA)**: The minimum physical write unit on the disk or SSD. 
+   - In HDDs, this is often called a **disk sector** (commonly 512 bytes, sometimes 4096 bytes for modern drives).  
+   - In SSDs, it might align with an internal flash page size (often 4096 bytes or bigger), but devices may still expose 512-byte LBAs due to legacy reasons.
+
+2. **Logical Block (LBA)**: The *logical* sector size the OS sees.  
+   - Typically 512 bytes or 4096 bytes.  
+   - Can differ from the physical block.  
+   - The disk firmware or controller abstracts the mapping from LBA → PBA.
+
+3. **File System Block**: The block size that the file system manages, e.g., 4096 bytes (4 KB).  
+   - The file system will read/write in multiples of its own block size.  
+   - This must be *at least* the size of the LBA. Often, a single file system block is multiple LBAs.
+
+### Different “Page” Concepts
+1. **Virtual Memory Page**: The minimum granularity of virtual memory mapping in the OS (commonly 4 KB).  
+2. **Database Page**: In database systems like MySQL or PostgreSQL, the unit of read/write in the DB’s storage engine (e.g., 8 KB or 16 KB).  
+3. **Flash Page** (SSD-internal): The minimal write unit for NAND flash, typically larger than 4 KB.
+
+> **Advice**: Always specify the context of the term *page* or *block*: e.g., “file system block” vs. “DB page” vs. “SSD page.” Clarity avoids confusion!
+
+---
+
+## Example Terminology & Commands
+
+### Physical vs. Logical Sector Sizes
+
+#### On Linux: `lsblk`
+```bash
+lsblk -o NAME,PHY-SeC,LOG-SeC
+```
+- **PHY-SeC**: physical sector size in bytes.
+- **LOG-SeC**: logical sector size in bytes.
+
+**Example Output**:
+```
+NAME   PHY-SeC  LOG-SeC
+sda      4096     512
+├─sda1   4096     512
+├─sda2   4096     512
+└─sda3   4096     512
+```
+Interpretation:
+- The disk is physically writing 4096 bytes at a time (PBA).
+- The OS sees 512-byte logical sectors (LBAs).
+- Any single 512-byte write from the OS *actually* triggers a 4096-byte write physically.
+
+#### On macOS: `diskutil`
+```bash
+diskutil info /dev/disk0
+```
+Might show a single number for “Device Block Size,” e.g. 4096, if the logical and physical are identical.
+
+---
+
+## Write Amplification Example
+If the file system block size is 4096 bytes (4 KB), but the disk exposes 512-byte LBAs, writing even 1 byte from the OS perspective leads to a 4 KB write at the file system level, which in turn may lead to a full 4 KB write physically (or sometimes more if the device’s physical page is larger and must do read-modify-write).
+
+> **Key Concept**: This mismatch is called **write amplification**, because you’re writing more data to the physical medium than the application might expect.
+
+---
+
+## File System Examples
+
+1. **FAT** (File Allocation Table) — *The OG*
+   - **Variants**: FAT12, FAT16, FAT32.  
+   - Extremely simple, widely used on small devices (USB flash drives).
+   
+2. **NTFS** (New Technology File System, Windows)
+   - Called “New” but dates back to Windows NT (1993-early 2000s).  
+   - Journaling, access control, metadata, etc.
+
+3. **APFS** (Apple File System)
+   - Modern file system for Apple devices, with snapshots, encryption, etc.
+
+4. **ext4** (Fourth Extended File System)
+   - Default in many Linux distributions.
+   - Evolved from ext2 → ext3 → ext4.
+
+5. **ZFS**
+   - Known for checksumming, redundancy, snapshots, and large-scale storage management.  
+   - Often used in enterprise environments (and popular in some Linux/FreeBSD setups).
+
+6. **btrfs**, **XFS**, etc.
+   - Additional advanced file systems, each with specialized features.
+
+**Fun Fact**: Some companies discovered performance gains switching from ext4 to ZFS for certain workloads. File systems can have a *huge* impact on I/O patterns and performance because they are “mini databases.”
+
+---
+
+## Partitions
+Often, a single *physical* device is split into multiple **partitions**. For example:
+- `/dev/sda1`
+- `/dev/sda2`
+- `/dev/sda3`
+
+Each partition can be formatted with its own file system (ext4, NTFS, etc.). The partition table (e.g., MBR or GPT) keeps track of these divisions.
+
+---
+
+## Putting It All Together
+
+### Diagram: Storage Layers
+Here’s a simple mermaid diagram showing the layering concept from hardware to file system:
+
+```mermaid
+flowchart TB
+    A[Physical Disk / SSD] --> B[LBA Array (Block Device)]
+    B --> C[File System (e.g., ext4, NTFS)]
+    C --> D[Files & Directories]
+    D --> E[User / Applications]
+```
+
+**Explanation**:
+1. **Physical Disk/SSD** has physical blocks (PBA, device geometry).
+2. Exposed to OS as an **LBA array** (e.g., 512-byte or 4096-byte logical sectors).
+3. **File System** organizes LBAs into larger file system blocks, tracks metadata, etc.
+4. Presents **Files & Directories** as user abstractions.
+5. **User/Applications** interact with files, not LBAs.
+
+### Database Direct-to-Block Example
+A database can skip the file system and write directly to the block device. However, it must then manage:
+- Its own metadata
+- Free space
+- Wear-leveling (for SSDs) or geometry complexities
+- Concurrency
+
+Hence, many choose to let the OS file system handle large portions of this complexity.
+
+---
+
+## Conclusion & Key Takeaways
+
+1. **Storage Abstraction**: Presenting an array of LBAs hides physical complexity (platter geometry, flash pages, wear leveling).
+2. **File Systems**: They’re complex “mini databases” that map files/directories to LBAs. They handle caching, metadata, free space, journaling, etc.
+3. **Caching**: The page cache drastically improves performance, avoiding frequent slow disk/SSD I/O.
+4. **Block & Page Overload**: Always specify context (file system block, DB page, disk sector, etc.).
+5. **Write Amplification**: Mismatched sizes between LBA, PBA, and file system blocks can cause more data to be written than expected.
+6. **Choice of File System**: Impacts performance, data integrity, features. There’s a *reason* there are so many file systems—each has its own trade-offs.
+
+> **Reflect**: Sometimes you *don’t* need a file system if your application can manage block-level I/O directly. But for most general use cases, letting a mature file system do the heavy lifting is a huge benefit.
+
+---
+
+## Additional Resources
+- **Linux Man Pages** for `lsblk`, `fdisk`, `mkfs`, `mount`.
+- Official documentation for each file system (e.g., [ext4 Wiki](https://ext4.wiki.kernel.org), [ZFS on Linux](https://openzfs.github.io/openzfs-docs/)).
+- Book: *Operating Systems: Three Easy Pieces* by Remzi and Andrea Arpaci-Dusseau (free online). Great deep dive into OS fundamentals, including file systems.  
+- **Database** direct I/O references: MySQL docs on `innodb_flush_method`, PostgreSQL docs on direct I/O.
+
+**Tags**:  
+- #OperatingSystems  
+- #FileSystems  
+- #Storage  
+- #BlockDevices  
+- #Caching  
+
+**Links to other notes** (if in your Obsidian vault):  
+- [[Virtual Memory and Paging]]  
+- [[Hard Disk Internals]]  
+- [[SSD Internals and Wear Leveling]]
+
+---
+
+**End of Notes**.
