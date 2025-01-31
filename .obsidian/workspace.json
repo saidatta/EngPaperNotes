@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders/6.1 - Autoencoders with Tied Weights.md",
+                "file": "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/19 - Reflection - Are DL Models Understandable Yet?.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.1 - Autoencoders with Tied Weights"
+              "title": "19 - Reflection - Are DL Models Understandable Yet?"
             }
           }
         ],
@@ -203,8 +203,19 @@
   },
   "active": "d71b17501b2d7185",
   "lastOpenFiles": [
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders/6.2 - Autoencoders with Tied Weights.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/18 - CodeChallenge - Convert Sequential to Class.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/17 - Model Depth vs. Breadth.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/16 - Defining Models Using Sequential vs. Class.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/15 - Depth vs Breadth - Number of Parameters.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/14 - CodeChallenge - more qwerties!.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/13.2 - Multi-output ANN (iris dataset).md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/13.1 - Multi-output ANN (iris dataset).md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/12 - Why multilayer linear models don't exist.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/11 - Linear Solutions to Linear Problems.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/Untitled 6.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/4 - ANN/19 - Reflection - Are DL Models Understandable Yet?.md",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders/6.1 - Autoencoders with Tied Weights.md",
+    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders/6.2 - Autoencoders with Tied Weights.md",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders/5.1 - The Latent Code of MNIST.md",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders/5.2 - MNIST Latent Code.md",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders/4.2 - Autoencoders for Occlusion.md",
@@ -219,17 +230,6 @@
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/10 - Measuring Model Performance/3 - ARPF in Code.md",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/13",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/9 - Learning-Related Changes in Weights.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/8 - Freezing Weights During Learning.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/7 - Code Challenge - Identically Random Weights.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/6 - Code Challenge - Xavier vs. Kaiming Initializations.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/5 - Xavier and Kaiming Initializations.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/4 - Code Challenge - Investigating Weight Variance Initializations.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/3 - Weight Initializations - Theory – Why and How to Initialize Weights.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/2 - Weight Initializations - A Surprising Demo.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations/1 - Explanation of Weight Matrix Sizes.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/10 - Measuring Model Performance/8 - Better Performance in Test Than Train?.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/10 - Measuring Model Performance/7 - Computation Time.md",
-    "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/10 - Measuring Model Performance/6 - Code Challenge – MNIST with Unequal Groups.md",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/12 - Autoencoders",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/11 - Weight Inits & Investigations",
     "CourseNotes/ML/Udemy/DeepLearning_MikeCohen/notes/10 - Measuring Model Performance",
