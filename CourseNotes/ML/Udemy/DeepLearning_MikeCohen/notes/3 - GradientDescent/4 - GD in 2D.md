@@ -5,7 +5,6 @@
    - Update rule in 2D is conceptually identical to 1D; just extended to multiple coordinates.
    - Gradient descent can still get stuck in local minima or find solutions far from the global minimum depending on the initial starting point.
 3. **Why This Matters**: Modern machine learning involves very high-dimensional parameter spaces (often millions of dimensions). Understanding 2D generalizations is the next logical step before jumping to high-dimensional gradient-based optimization.
-
 ---
 ## 3. Definitions and Core Concepts
 ### 3.1 Derivatives vs. Partial Derivatives

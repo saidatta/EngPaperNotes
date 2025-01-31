@@ -1,0 +1,1 @@
+1. Write a document on deploying to lab0.
