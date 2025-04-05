@@ -7,12 +7,11 @@ ANNs are composed of several components:
 - **Nonlinear function**: This function (also known as the activation function) introduces non-linearity into the network, allowing it to learn complex patterns.
 - **Output** (y-hat): This is the prediction of the model. 
 - **Bias term**: This is often set to one and implicitly included in the model, but it does have its own weight. The bias term allows the activation function to be shifted to the left or right.
-
 ```
 Basic Perceptron Model:
 x1, x2 (inputs) --[W1, W2 (weights)]--> Σ (computational node) --[f (nonlinear function)]--> y-hat (output)
 ```
-
+![[Pasted image 20250131154524.png]]
 ## Feature Space and Separating Hyperplanes
 The **feature space** is a geometric representation of the data where each feature is an axis and each observation is a coordinate. 
 
@@ -25,8 +24,10 @@ Feature Space:
 Separating Hyperplane:
 A line that best separates the passing students from the failing students.
 ```
-
+![[Pasted image 20250131154736.png]]\
 ## Types of ANN Predictions
+
+![[Pasted image 20250131154818.png]]
 
 ANNs can make different types of predictions:
 

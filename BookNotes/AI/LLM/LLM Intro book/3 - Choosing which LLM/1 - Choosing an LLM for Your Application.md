@@ -81,7 +81,7 @@ GPT-4 is trained on a diverse dataset comprising publicly available content and 
 - **Objective Function**:
 
   \[
-  \theta^* = \arg\max_{\theta} \mathbb{E}_{x \sim D} [ R(x, \theta) ]
+  $\theta^* = \arg\max_{\theta} \mathbb{E}_{x \sim D} [ R(x, \theta) ]$
   \]
 
   Where:
@@ -92,13 +92,9 @@ GPT-4 is trained on a diverse dataset comprising publicly available content and 
 - **Policy Gradient Methods**:
   
   The gradient of the expected reward with respect to the parameters \( \theta \):
-
-  \[
-  \nabla_{\theta} J(\theta) = \mathbb{E}_{x \sim D} [ \nabla_{\theta} \log \pi_{\theta}(x) R(x, \theta) ]
-  \]
+  $\nabla_{\theta} J(\theta) = \mathbb{E}_{x \sim D} [ \nabla_{\theta} \log \pi_{\theta}(x) R(x, \theta) ]$
 
 #### Performance and Capabilities
-
 GPT-4 demonstrates significant improvements over its predecessors, particularly in reasoning, understanding, and generating human-like text.
 
 - **Massive Multitask Language Understanding (MMLU)**:
@@ -136,13 +132,9 @@ OpenAI emphasizes safety and alignment in GPT-4.
     ![TruthfulQA Benchmark Comparison](https://user-images.githubusercontent.com/5635322/170353511-1c0c5b5b-4861-46e2-bdd7-007a69c1c5c4.png)
 
     *Figure 3.4: Model comparison in TruthfulQA benchmark*
-
 - **Alignment Efforts**:
-
   OpenAI involved experts in AI alignment, privacy, and cybersecurity to mitigate risks.
-
 ---
-
 ### Gemini 1.5
 
 #### Architecture
@@ -157,29 +149,20 @@ OpenAI emphasizes safety and alignment in GPT-4.
 ##### Mixture-of-Experts Mathematical Representation
 
 Let:
-
 - \( x \): Input data.
-- \( E_i(x) \): Output from the \( i^{th} \) expert.
+- \( E_i(x) \): Output from the \( $i^{th}$ \) expert.
 - \( G(x) \): Gating function outputting weights \( g_i \) for each expert.
 
 The final output \( y \):
-
-\[
-y = \sum_{i} g_i(x) E_i(x)
-\]
+$y = \sum_{i} g_i(x) E_i(x)$
 
 - **Advantages**:
-
   - Efficient resource allocation.
   - Specialization in processing different data types.
   - Scalability without proportional increase in computational cost.
-
 #### Performance and Capabilities
-
 Gemini 1.5 shows significant improvements over its predecessor, Gemini 1.0.
-
 - **Comparison with Previous Versions**:
-
   ![Gemini Performance Comparison](https://user-images.githubusercontent.com/5635322/170355249-4c7e7ab0-6ef3-4fb2-b4a8-0f73b28b6e0b.png)
 
   *Figure 3.5: Gemini 1.5 Pro and Ultra compared to its previous version 1.0*

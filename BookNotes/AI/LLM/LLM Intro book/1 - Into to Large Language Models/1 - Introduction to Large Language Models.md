@@ -72,7 +72,6 @@ Traditionally, AI models were designed for specific tasks—each model trained f
   - Machine translation
 
 ### Transfer Learning and Generalization
-
 **Transfer Learning** involves leveraging knowledge gained from one task to improve performance on a related task. Foundation models excel in transfer learning due to their extensive pre-training on diverse datasets.
 
 - **Advantages**:

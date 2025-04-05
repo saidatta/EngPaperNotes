@@ -20,6 +20,7 @@ The output (`y`) of a model is expressed mathematically as:
 The term `x1*w1 + x2*w2 + ... + xn*wn + b` is a dot product between a vector containing the inputs and a vector containing the weights, and it represents the linear part of the computation in a perceptron. `σ` is the activation function, which introduces non-linearity.
 
 ### Activation Function
+![[Pasted image 20250131155831.png]]
 An activation function maps an input (the output of the linear part of the model) onto an output (the final output of the model). There are various types of activation functions used in deep learning, the most common being sigmoid, hyperbolic tangent (tanh), and Rectified Linear Unit (ReLU).
 
 ![Activation Functions](https://miro.medium.com/max/1200/1*4ZEDRpFuCIpUjNgjDdT2Lg.png)

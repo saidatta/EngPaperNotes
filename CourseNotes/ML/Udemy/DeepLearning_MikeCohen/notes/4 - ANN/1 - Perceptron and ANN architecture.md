@@ -9,11 +9,9 @@
 - Node computes the weighted sum of the inputs and adds a bias term.
 - The weighted sum is passed through an activation function which provides the final output.
 - Example: In an image recognition task, the inputs could be pixel intensities, the weights could be parameters learned by the network during training, the bias is another parameter, and the activation function could be a ReLU (Rectified Linear Unit) or sigmoid function.
-
 ## Linear Models
 - Common in statistics and machine learning, e.g., regression, general linear models, ANOVA, factor analysis.
 - Great for linearly separable problems like predicting house prices based on area, number of rooms, etc., but many problems such as image recognition or text translation cannot be solved through linear models.
-
 ## Nonlinear Operations
 - Needed for problems that cannot be solved by linear models.
 - Example: The sign function, a simple nonlinear function used in the perceptron model.
@@ -21,31 +19,29 @@
     - The output is either -1 or +1 depending on the sign of the input.
 - In deep learning, there are many nonlinear functions such as sigmoid, tanh, ReLU, and softmax.
 
+![[Pasted image 20250131132102.png]]
+![[Pasted image 20250131132244.png]]
 ## Perceptron Model
 - A perceptron performs a linear operation, followed by a nonlinear operation.
     - Linear Operation: Dot product between the input numbers and the weight vector.
     - Nonlinear Operation: Passes the result through a nonlinear function, often referred to as an activation function.
-- Output of a perceptron: Y_hat = f(W*X + B)
+- Output of a perceptron: $Y_a = f(W*X + B)$
 - Importance of the bias term:
     - Without a bias term, the model is constrained to pass through the origin, which can result in suboptimal results.
     - A bias term allows the model to fit any arbitrary data positioned anywhere in the plane.
     - In practice, the bias term is always included.
-
+![[Pasted image 20250131154231.png]]
 ## Math of Deep Learning
 - Much of the math in deep learning involves computing a linear weighted sum of inputs and passing that value through a nonlinear function.
 - Example equation: Y_hat = f(W*X + B), where W*X is a linear operation, and f is a nonlinear function.
-
+![[Pasted image 20250131154046.png]]
 ## Bias Term
 - Also called the intercept in statistics.
 - Needed in order to avoid suboptimal results when the line is constrained to pass through the origin.
-- The bias term is a constant set to one, and its weight, W0, is a parameter that the model optimizes.
+- The bias term is a constant set to one, and its weight, $W0$, is a parameter that the model optimizes.
 - For example, in a simple linear regression model, the bias is the y-intercept of the line, allowing the line to best fit the data.
-
 ---
-
 Note: In the notes, X represents inputs, W represents weights, B represents bias, f represents a nonlinear function, and Y_hat represents the output of the model.
-
-
 ### Real-life examples of ANN
 Artificial Neural Networks (ANNs) are used in a wide variety of real-world applications. Here are a few examples:
 

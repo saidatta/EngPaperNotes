@@ -1,6 +1,4 @@
-
 ## Simple Regression
-
 Regression is a statistical procedure used for predicting data values. In this context, we'll focus on a simple regression where we predict one continuous variable from another.
 
 The formula for a simple regression is: 
@@ -12,11 +10,9 @@ y_i = β_0 + β_1*x_i + ε_i
 In this formula, `y_i` is the dependent variable we are trying to predict. `x_i` is the independent variable we are using to make the prediction. `β_0` is the y-intercept, and `β_1` is the slope of the line (the weight or scale for `x_i`). `ε_i` is the error or residual term, representing the difference between the values we predict (`y_i`) and the values we observe in real data.
 
 This is similar to the equation of a line (`y = mx + b`) where `m` is the slope, `b` is the y-intercept, and `y` is the dependent variable.
-
+![[Pasted image 20250203075619.png]]
 ## Mapping to Perceptron
-
 The equation for a perceptron can be mapped to the simple regression equation:
-
 ```math
 y = b + Σ(wx)
 ```

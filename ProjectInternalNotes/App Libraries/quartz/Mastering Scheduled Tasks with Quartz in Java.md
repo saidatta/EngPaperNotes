@@ -151,7 +151,6 @@ Find the appropriate SQL script for your database and execute it to create the n
 3. **QuartzSchedulerThread**: Handles trigger acquisition and job scheduling.
 
 ### Trigger Processing
-
 The `JobStore` interface is key for trigger management. Implementations include `RAMJobStore` (for in-memory storage) and `JobStoreSupport` (for database-backed storage).
 
 ```java
