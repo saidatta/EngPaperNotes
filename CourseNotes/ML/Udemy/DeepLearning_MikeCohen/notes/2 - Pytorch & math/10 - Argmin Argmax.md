@@ -6,7 +6,6 @@ Given a set of numbers, the minimum value is the smallest number, and the maximu
 
 ### Argmin and Argmax
 The Argmin and Argmax functions return the index or location of the minimum and maximum values, respectively.
-
 - Argmin: Returns the index of the smallest value
 - Argmax: Returns the index of the largest value
 

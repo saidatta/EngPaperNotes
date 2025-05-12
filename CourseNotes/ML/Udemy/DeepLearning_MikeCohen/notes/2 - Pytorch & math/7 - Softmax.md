@@ -1,4 +1,3 @@
-
 ### Softmax Function
 - Used to transform arbitrary numbers into probability distributions
 - Ensures that the output values sum to 1

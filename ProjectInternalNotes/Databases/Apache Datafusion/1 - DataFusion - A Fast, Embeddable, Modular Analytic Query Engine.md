@@ -31,9 +31,7 @@ The purpose of these notes is to provide a **PhD-level** deep dive into DataFusi
   - Building a high-performance OLAP query engine from scratch requires huge engineering resources (often hundreds of millions of dollars across years).  
   - Many subproblems (e.g., vectorized execution, expression evaluation, query planning) are common across different projects.  
   - DataFusion provides “out-of-the-box” SQL support, plus a flexible and modular architecture to adapt or extend the engine for specialized domains.
-
 ### 1.2 Key Attributes
-
 - **Embeddable & Modular:**  
   - Developers can use everything from front-end parsing and SQL planning to the low-level vectorized execution.  
   - Or they can integrate only certain parts—like the expression evaluator or the physical execution engine.
@@ -41,20 +39,15 @@ The purpose of these notes is to provide a **PhD-level** deep dive into DataFusi
 - **Performance-Oriented:**  
   - DataFusion uses Apache Arrow as its memory model and arrow kernels for efficient vectorized computation.  
   - Designed to handle large-scale analytical queries with minimal overhead.
-
 - **Extensibility:**  
   - You can customize function libraries, add custom relational operators, or plug in custom data sources.  
   - The community invests in making sure standard relational rewrites and industrial best practices are well-supported.
-
 - **Rust Implementation:**  
   - Provides memory and thread safety guarantees.  
   - Modern tooling (Cargo, crates.io) simplifies building, integrating, and distributing code.  
   - Encourages a vibrant community of contributors, as the compiler rules out many classes of memory-management errors.
-
 ---
-
 ## 2. Why DataFusion? 
-
 ### 2.1 Shared Infrastructure for OLAP
 - **Reduce Reinventing the Wheel:**  
   - New systems can focus on domain-specific logic rather than redoing well-known optimizations.  
@@ -63,14 +56,12 @@ The purpose of these notes is to provide a **PhD-level** deep dive into DataFusi
   - Large open source contributor base.  
   - Frequent monthly releases with new features, bug fixes, and performance improvements.  
   - Encourages collaboration on the “boring but critical” parts of query engines.
-
 ### 2.2 Use Cases
 1. **Full Database Systems**  
    - *InfluxDB IOx:* Time-series engine built atop DataFusion for real-time, high-volume ingest and analytic queries.  
    - *Ballista:* A distributed compute platform using DataFusion at each executor node.  
    - Others building specialized analytics engines or next-gen distributed systems.
-
-2. **Component Reuse**  
+1. **Component Reuse**  
    - *Execution Engine Integration:* Some projects only need a vectorized execution layer, with their own planning or front-end.  
    - *SQL Parser & Planner:* Others might combine DataFusion’s parser/planner with a custom distributed execution framework.
 
