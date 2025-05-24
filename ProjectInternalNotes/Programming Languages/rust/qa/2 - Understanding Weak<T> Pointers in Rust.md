@@ -34,9 +34,7 @@ In Rust, **smart pointers** are data structures that not only act like reference
 - **No Contribution to Reference Count**: Prevents reference cycles.
 - **Upgradeable**: Can attempt to create a strong reference (`Rc<T>` / `Arc<T>`) if the data is still alive.
 - **Handles Data Deletion Gracefully**: Provides methods to check if the data has been dropped.
-
 ---
-
 ## Preventing Reference Cycles
 
 ### **The Problem: Reference Cycles**

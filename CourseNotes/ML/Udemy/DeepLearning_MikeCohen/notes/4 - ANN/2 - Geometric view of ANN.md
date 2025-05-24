@@ -54,7 +54,3 @@ Predicting the actual exam score based on hours studied and hours slept. Require
 - **Activation Function**: A function that introduces non-linearity into the ANN, allowing it to learn complex patterns.
 - **Discrete/Categorical/Binary/Boolean Predictions**: Predictions that fall into distinct categories or options.
 - **Numeric/Continuous Predictions**: Predictions that are output values on a continuous scale.
-
-## Diagrams and Figures
-
-1. **Diagram of a Basic Perceptron Model**: Shows the inputs, weights, computational

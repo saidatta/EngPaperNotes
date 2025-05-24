@@ -15,35 +15,28 @@
 8. [[Key Takeaways]]
 
 ---
-
 ## 1. What is Overfitting?
 Overfitting occurs when a model **learns not only the underlying patterns** in the training data but also **the noise or random fluctuations**. 
-
 - **Symptoms of overfitting**:
   - Perfect or near-perfect performance on training data.
   - Poor performance on **unseen test data**.
   - The model effectively “memorizes” the training examples instead of learning generalizable patterns.
-
 **Visual Example**:
 - Imagine a set of points that roughly follow a straight line.
 - A **simple linear model** (few parameters) might capture the trend well.
 - A **high-degree polynomial** (many parameters) might pass exactly through every data point in the training set, but fail to predict well on new data.
 
 ---
-
 ## 2. What is Underfitting?
 Underfitting occurs when a model **fails to learn the underlying structure** in the data. It is often **too simple** to capture the complex patterns that may exist.
-
 - **Symptoms of underfitting**:
   - Poor performance on both training and test data.
   - The model is too constrained to capture the real trend or complexity.
-
 **Visual Example**:
 - If data clearly follows a curved or more complex relationship,
 - A **very simple linear model** might be insufficient, missing the true pattern and providing a large error on both training and test sets.
 
 ---
-
 ## 3. Comparing Overfitting & Underfitting
 
 | Aspect                  | Overfitting                             | Underfitting                                |
@@ -54,7 +47,6 @@ Underfitting occurs when a model **fails to learn the underlying structure** in 
 | **Data requirements**     | Over-parameterized models are harder to fit with limited data | Simpler models can often do reasonably well with smaller datasets, but might miss important patterns |
 
 ---
-
 ## 4. Detecting Overfitting and Underfitting
 1. **Visualization** (feasible in low dimensions):
    - Plot the **training data** and the **model predictions** to see how closely the model follows the noise or misses the pattern.

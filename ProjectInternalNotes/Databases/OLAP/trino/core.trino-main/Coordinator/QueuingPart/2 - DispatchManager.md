@@ -1,5 +1,3 @@
-Below is a high-level, logical explanation of what the `DispatchManager` does within Trino’s internal architecture.
-
 ### What is the DispatchManager?
 
 The `DispatchManager` is part of Trino’s coordinator logic. When a user issues a SQL query, Trino doesn't immediately start executing it. Instead, the query goes through a "dispatch" phase. The `DispatchManager` orchestrates this phase by preparing the query, assigning it to a resource group (for workload management), and eventually handing it off for execution. It is a key piece that connects the request from the client to the actual execution engine, ensuring proper initialization, validation, and queueing.

@@ -1,11 +1,9 @@
 Below is a logical explanation of what the given Trino code snippet does in the context of how Trino handles queries internally. We’ll break it down step-by-step, using conceptual metaphors, examples, and ASCII diagrams to help clarify the flow:
 
 ---
-
 ### High-Level Purpose
 
 Trino’s query engine involves multiple steps from the moment a user sends a SQL query until the query results are retrieved. The code you see here is part of Trino's front-end API layer that manages "queued" queries. It handles:
-
 1. **Receiving a new SQL query** (via a POST request).
 2. **Registering the query** and enqueuing it so it can be dispatched (executed) by the engine.
 3. **Providing endpoints** for polling the query’s status, retrieving partial or final results.
@@ -14,7 +12,6 @@ Trino’s query engine involves multiple steps from the moment a user sends a SQ
 This code primarily deals with the early lifecycle of a query (the "queued" state before execution), how the client is informed about the query’s progress, and how the system ensures queries that never properly start are abandoned and cleaned up.
 
 ---
-
 ### Logical Flow of a Query
 
 1. **Posting a Query** (`POST /v1/statement`):
